@@ -1,3 +1,4 @@
+/* CSS FOR HEADER */
 .header-navbar {
   padding: 0;
   height: 60px;
@@ -46,7 +47,7 @@
   background-color: #f4f4f7;
   color: #5c6178;
 }
-
+/* CSS FOR MAIN */
 body {
   margin-top: 70px;
 }
@@ -154,37 +155,29 @@ body {
 }
 
 .learning_banner {
-  align-items: center;
   background-color: #e8eaf6;
   border-radius: 12px;
   color: #212529;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
   line-height: 20px;
   margin: 0px 0px 8px;
   padding: 14px 27px;
-  flex-direction: row;
 }
 .learning_banner .img_banner {
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAA…O9f6zX3YDsGXj0ywU/wFnURvAmKzLUAAAAABJRU5ErkJggg==");
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAA…O9f6zX3YDsGXj0ywU/wFnURvAmKzLUAAAAABJRU5ErkJggg==);
   background-size: 72px;
+  margin-right: 10%;
   width: 72px;
   color: #212529;
   line-height: 20px;
+  
 }
-.learning_banner .text {
-  color: #212529;
-  line-height: 20px;
-  padding: 0px 32px;
-  display: inline;
+.learning_banner-title{
+  flex: 2;
 }
-.learning_banner .title {
-  color: #212529;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 20px;
-}
-.learning_banner .main_text {
+.learning_banner .banner_text {
   color: #212529;
   line-height: 20px;
   margin: 5px 0px 0px;
@@ -197,13 +190,13 @@ body {
   border-style: solid;
   border-width: 1px;
   color: #ffffff;
-  display: inline-block;
   font-family: Disclaimer Regular;
   font-size: 14px;
   line-height: 21px;
   padding: 6px 12px;
-  text-align: center;
 }
+
+/* CSS FOR FOOTER */
 .list-inf {
   font-size: 14px;
 }
