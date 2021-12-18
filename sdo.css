@@ -1,0 +1,178 @@
+.signup-btn{
+    line-height: 60px;
+    /* display: block; */
+}
+.header{
+    padding: 0;
+    margin: 0;
+    height: 60px;
+}
+.navbar{
+    padding: 0;
+    height: 60px;
+}
+.login-btn{
+    line-height: 60px;
+    display: block;
+}
+.edmodo-img{
+    top: 50%;
+    transform: translateY(-50% + 1);
+}
+.nav-link{
+    padding: 0;
+}
+.nav-item{
+    line-height: 60px;
+    padding: 0 12px;
+}
+.btn-show{
+    padding: 0 24px;
+}
+.nav-item :hover{
+    background-color: aqua;
+}
+main {
+    display: flex;
+    margin: 100px auto 0;
+    justify-content: center;
+}
+main button {
+    border: none;
+    padding: 16px 36px;
+    border-radius: 6px;
+    margin-top: 22px;
+}
+.intro {
+    
+    padding: 20px;
+    justify-content: center;
+}
+:root {
+    --primary-color: #1a237e;
+}
+main .img {
+    margin-top: -50px;
+}
+.intro h3 {
+    color: var(--primary-color);
+    font-size: 50px;
+    font-weight: 300;
+    padding:  0 100px;
+}
+.intro p {
+    color: #4e5665;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 34.5px;
+    padding:  0 100px;
+}
+.button-contact_us{
+   margin-left: 100px;
+}
+.connect {
+    margin-top: 120px;
+    text-align: center;
+}
+.connect h3 {
+    color: var(--primary-color);
+    font-size: 40px;
+    font-weight: 400;
+}
+.connect p {
+    font-size: 34px;
+    color: #4e5665;
+    margin-top: 40px;
+
+}
+.connect-details {
+    width: 100%;
+    height: 100px;
+}
+.intro_1 h3 {
+    margin: 100px 100px 20px;
+    color: #1a237e;
+    font-size: 30px;
+    line-height: 36px;
+}
+.intro_1 p {
+    color: #4e5565;
+    margin: 0px 0px 20px;
+    font-size: 30px;
+    line-height: 36px;
+}
+.intro_2 h3,p {
+    
+    color: #4e5565;
+    margin: 0px 0px 20px;
+    font-size: 30px;
+    line-height: 36px;
+
+}
+.intro_2 h3 {
+   text-align: center;
+   margin-top: 140px;
+
+}
+.intro_2 p {
+  margin: 17px 100px ;
+
+}
+.learnmore-4-cr1{
+    background-color: #303f9f;
+    margin-top: 150px;
+    background-position: 50% 50%;
+    padding: 50px;
+
+}
+.learnmore-4-cr1-t1 h1{
+    color: white;
+    font-size: 23px;
+}
+.learnmore-4-cr1-t1 p{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+.learnmore-4-cr1-t2 h1{
+    color: white;
+    font-size: 23px;
+}
+.learnmore-4-cr1-t2 p{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+.learnmore-4-cr1-t3 h1{
+    color: white;
+    font-size: 23px;
+}
+.learnmore-4-cr1-t3 p{
+    color: white;
+    font-size: 35px;
+    text-align: center
+}
+.footer-lable {
+    font-size: 16px;
+    font-family: "Disclaimer Regular", Helvetica "Neue", Helvetica, sans-serif;
+}
+.footer-lable-2 {
+    font-size: 11px;
+    text-align: justify;
+    opacity: 0.6;
+}
+.form-select {
+    width: 40%;
+}
+.norm{
+    background-color: #303f9f;
+    display: flex;
+    padding: 100px 100px 20px 100px;
+}
+.bg-learnmore-4{
+    background-image: url("/assets/images/bg-learnmore-4.png");
+}
+
+
+
