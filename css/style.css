@@ -162,10 +162,9 @@ body {
   align-items: center;
   justify-content: space-around;
   line-height: 20px;
-  margin: 0px 0px 8px;
+  margin: 0px 12px 0px 12x;
   padding: 14px 27px;
 }
-<<<<<<< HEAD
 .learning_banner .img_banner {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAA…O9f6zX3YDsGXj0ywU/wFnURvAmKzLUAAAAABJRU5ErkJggg==);
   background-size: 72px;
@@ -174,13 +173,6 @@ body {
   color: #212529;
   line-height: 20px;
   
-=======
-.img_banner {
-  background-size: cover;
-  width: 50%;
-  flex:1;
-  margin-left: 20%;
->>>>>>> 2b32260aeb4b4faa6739201b66084281754fb422
 }
 .learning_banner-title{
   flex: 2;
