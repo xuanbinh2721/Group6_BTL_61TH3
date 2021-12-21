@@ -21,6 +21,7 @@
   margin: 0px 34.5px;
   padding: 0px 6px;
 }
+
 .learn-more_dad{
   position: relative;
   cursor: pointer;
@@ -78,6 +79,7 @@
 .btn-show {
   padding: 0 24px;
 }
+.learn-more_list .dropdown-item,
 .learnmore_items,
 .nav-item:hover {
   background-color: #f4f4f7;
