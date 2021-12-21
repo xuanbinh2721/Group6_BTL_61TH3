@@ -1,37 +1,89 @@
-.signup-btn{
-    line-height: 60px;
-    /* display: block; */
-}
-.header{
+.header-navbar {
     padding: 0;
+    height: 60px;
     margin: 0;
+  }
+  .navbar {
+    padding: 0 0;
     height: 60px;
-}
-.navbar{
-    padding: 0;
-    height: 60px;
-}
-.login-btn{
-    line-height: 60px;
+    background-color: #ffffff;
+    box-shadow: #000000 0px -2px 4px 0px;
+    color: #212529;
+    line-height: 20px;
+    margin: 0px 0px 36px;
+  }
+  .navbar_header {
+    color: #212529;
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+    margin: 0px 34.5px;
+    padding: 0px 6px;
+  }
+  
+  .learn-more_dad{
+    position: relative;
+    cursor: pointer;
+    color: rgba(0,0,0,.55);
+  }
+  .learn-more_list{
+      position: absolute;
+      display: none;
+      list-style: none;
+      padding-left: 0;
+      left: 0;
+      z-index: 1;
+      box-shadow: 0px 4px 4px 0px #cac6c6;
+      background-color: #ffff;
+  }
+  .learn-mode_item{
+      padding: 0 0 !important;
+  }
+  .learn-more_item li{
+      padding-left: 0;
+  }
+  .learn-more_dad:hover > .learn-more_list{
+      display: block;
+  }
+  .up-hover{
+      display: none;
+  }
+  .learn-more_dad:hover .down-hover{
+      display: none;
+  }
+  .learn-more_dad:hover .up-hover{
+      display: inline-block;
+  }
+  .learn-more_list a{
+    color: rgba(0,0,0,.55);
+  }
+  .signup-btn,
+  .login-btn {
     display: block;
-}
-.edmodo-img{
-    top: 50%;
-    transform: translateY(-50% + 1);
-}
-.nav-link{
-    padding: 0;
-}
-.nav-item{
+    line-height: 60px;
+    cursor: pointer;
+  }
+  .nav-item {
     line-height: 60px;
     padding: 0 12px;
-}
-.btn-show{
+  }
+  .nav-link {
+    display: block;
+    padding: 0;
+  }
+  .edmodo-img {
+    top: 50%;
+    transform: translateY(-50% + 1);
+  }
+  .btn-show {
     padding: 0 24px;
-}
-.nav-item :hover{
-    background-color: aqua;
-}
+  }
+  .learn-more_list .dropdown-item,
+  .learnmore_items,
+  .nav-item:hover {
+    background-color: #f4f4f7;
+    color: #5c6178;
+  }
 main {
     display: flex;
     margin: 100px auto 0;
