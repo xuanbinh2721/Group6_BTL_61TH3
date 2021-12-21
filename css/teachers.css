@@ -1,3 +1,4 @@
+/* CSS FOR HEADER */
 .header-navbar {
     padding: 0;
     height: 60px;
@@ -31,32 +32,32 @@
     padding: 11px 35px;
     text-align: left;
   }
-  
-  .signup-btn,
-  .login-btn {
-    display: block;
-    line-height: 60px;
-  }
-  .nav-item {
-    line-height: 60px;
-    padding: 0 12px;
-  }
-  .nav-link {
-    display: block;
-    padding: 0;
-  }
-  .edmodo-img {
-    top: 50%;
-    transform: translateY(-50% + 1);
-  }
-  .btn-show {
-    padding: 0 24px;
-  }
-  .learnmore_items,
-  .nav-item:hover {
-    background-color: #f4f4f7;
-    color: #5c6178;
-  }
+.signup-btn,
+.login-btn {
+  display: block;
+  line-height: 60px;
+  cursor: pointer;
+}
+.nav-item {
+  line-height: 60px;
+  padding: 0 12px;
+}
+.nav-link {
+  display: block;
+  padding: 0;
+}
+.edmodo-img {
+  top: 50%;
+  transform: translateY(-50% + 1);
+}
+.btn-show {
+  padding: 0 24px;
+}
+.learnmore_items,
+.nav-item:hover {
+  background-color: #f4f4f7;
+  color: #5c6178;
+}
   
   body {
     margin-top: 70px;
