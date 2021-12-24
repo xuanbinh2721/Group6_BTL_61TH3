@@ -1,3 +1,9 @@
+.col-md-12{
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
 /* CSS FOR HEADER */
 .header-navbar {
   padding: 0;

@@ -1,3 +1,16 @@
+h2 {
+  font-family: "Vulf Sans Light";
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  font-style: normal;
+}
+.col-md-12 {
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
 /* CSS FOR HEADER */
 .header-navbar {
   padding: 0;
@@ -22,41 +35,41 @@
   padding: 0px 6px;
 }
 
-.learn-more_dad{
+.learn-more_dad {
   position: relative;
   cursor: pointer;
-  color: rgba(0,0,0,.55);
+  color: rgba(0, 0, 0, 0.55);
 }
-.learn-more_list{
-    position: absolute;
-    display: none;
-    list-style: none;
-    padding-left: 0;
-    left: 0;
-    z-index: 1;
-    box-shadow: 0px 4px 4px 0px #cac6c6;
-    background-color: #ffff;
+.learn-more_list {
+  position: absolute;
+  display: none;
+  list-style: none;
+  padding-left: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0px 4px 4px 0px #cac6c6;
+  background-color: #ffff;
 }
-.learn-mode_item{
-    padding: 0 0 !important;
+.learn-mode_item {
+  padding: 0 0 !important;
 }
-.learn-more_item li{
-    padding-left: 0;
+.learn-more_item li {
+  padding-left: 0;
 }
-.learn-more_dad:hover > .learn-more_list{
-    display: block;
+.learn-more_dad:hover > .learn-more_list {
+  display: block;
 }
-.up-hover{
-    display: none;
+.up-hover {
+  display: none;
 }
-.learn-more_dad:hover .down-hover{
-    display: none;
+.learn-more_dad:hover .down-hover {
+  display: none;
 }
-.learn-more_dad:hover .up-hover{
-    display: inline-block;
+.learn-more_dad:hover .up-hover {
+  display: inline-block;
 }
-.learn-more_list a{
-  color: rgba(0,0,0,.55);
+.learn-more_list a {
+  color: rgba(0, 0, 0, 0.55);
 }
 .signup-btn,
 .login-btn {
@@ -86,6 +99,9 @@
   color: #5c6178;
 }
 /* CSS FOR MAIN */
+main {
+  background-color: #f9fafb;
+}
 body {
   margin-top: 62px;
   padding: 0;
@@ -209,27 +225,87 @@ body {
   overflow: hidden;
   padding: 0px;
   min-height: 0px;
+  display: flex;
+  align-items: center;
+  padding: 50px;
 }
-.toolkit_link .toolkit_tittle {
-  width: 104% !important;
-  max-width: 104% !important;
-  margin-left: calc(-4% / 2);
-  margin-right: calc(-4% / 2);
+.toolkit_link .toolkit_link_title {
+  flex: 2;
 }
-.toolkit_link .toolkit_tittle p {
+.toolkit_link .toolkit_link_text {
   display: flex;
   flex-direction: column;
-  font-size: 13px;
+  font-size: 24px;
   justify-content: center;
   line-height: 19.5px;
-  margin: 0px 25.5469px;
-
   background-color: #e8eaf6;
   background-size: cover;
   border-radius: 10px;
   color: #4e5565;
   padding: 27.32px 27.32px 0px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
+.toolkit_link .toolkit_link_btn {
+  background: #ffca27;
+  border-radius: 5px;
+  color: #1a237e;
+  font-size: 18px;
+  cursor: pointer;
+}
+.toolkit_link .toolkit_link_btn a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.toolkit_link .toolkit_link_btn span {
+  display: inline;
+  text-align: left;
+  background: #ffca27;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1a237e;
+  min-width: 180px px;
+}
+.guide_teacher {
+  background-color: #fff;
+}
+.guide_teacher_title h2 {
+  padding: 30px 0px 20px 0px;
+  background-color: #ffffff;
+  color: #4e5565;
+}
+.header_step3,
+.header_step2,
+.header_step1 {
+  color: #19237e;
+  font-size: 36px;
+  font-weight: 700;
+}
+.header_step3_text,
+.header_step2_text,
+.guide_teacher_step1 p {
+  font-size: 24px;
+  color: #4e5565;
+  font-family: Disclaimer Medium;
+  line-height: 36px;
+  margin: 0px 0px 20px;
+}
+.guide_teacher_step2 a {
+  color: #ff6f00;
+}
+.important {
+  background-color: #ff4d37;
+  color: #ffffff;
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+  font-family: Vulf Sans Light;
+  font-size: 24px;
+  line-height: 36px;
+}
+
 /* CSS FOR FOOTER */
 .list-inf {
   font-size: 14px;
