@@ -1,0 +1,407 @@
+/* CSS for header */
+.edmodo-logo{
+    margin-left: 54px;
+}
+.language-contain{
+    position: relative;
+    cursor: pointer;
+}
+.language-default{
+    color: #1a237e;
+}
+.language-list{
+    display: none;
+    position: absolute;
+    right:0;
+    list-style-type: none;
+    padding-left: 0;
+    box-shadow: 0px 4px 4px 0px #cac6c6;
+    background-color: #ffff;
+    color: #1a237e;
+}
+.language-contain:hover .language-list{
+    display: block;
+}
+.language-list a{
+    padding: 0 40px;
+    color: #1a237e;
+}
+.sub-btn{
+    line-height: 60px;
+    padding: 0 12px;
+    border: none;
+    color:#1b1e83;
+}
+/* CSS for main */
+.main-sp{
+    margin-top: 100px;
+}
+.search-box{    
+    display: flex;
+}
+.search-title{
+    margin-top: 100px;
+    color:#1b1e83;
+    font-family:Vulf Sans Light;
+    font-size:80px;
+    line-height:96px;
+    margin:40px 0px;
+    text-align:left;
+}
+.search-container{
+    flex: 2;
+}
+.form-contain{
+    display: flex;
+}
+.form-input{
+    width: 80%;
+    padding: 15px;
+    outline: none;
+    border: 1px solid #ffc107;
+    box-shadow: 4px 2px 8px rgb(199, 197, 103);
+}
+.input-search{
+    width:70%;
+    outline: none;
+    border: 1px solid #ffc107;
+    padding: 12px 15px;
+    box-shadow: 10px 4px 8px rgb(199, 197, 103);
+    
+}
+.search-img{
+    flex:1;
+}
+.form-btn{
+    border: 1px solid #ffc107;
+    outline: none;
+    background-color: #ffc107;
+    padding: 12px 25px;
+    box-shadow: 4px 2px 8px rgb(199, 197, 103);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.bi-search{
+    color:#1b1e83;
+}
+.support-hero{
+    width: 100%;   
+}
+
+.main-sp-library{
+    padding-bottom: 60px;
+    margin-bottom: 80px;
+}
+.library-category{
+    margin-top: 24px;
+}
+.library-container{
+    background-color: #FFF8E1;
+    align-items: center;
+    display: flex;
+}
+.library-title{
+    font-family:Vulf Sans Light;
+    font-size:48px;
+    margin:48px 0px;
+    color:#1b1e83;
+}
+.library-title-1{
+    padding: 0px 12px;
+    color:#1b1e83;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 36px;
+    line-height: 1.5;
+    font-family: "Disclaimer Regular";
+}
+.library-img{
+    width: 80%;
+    margin-left: 10px;
+}
+.need-more-help{
+    padding-bottom: 100px;
+}
+.need-title{
+    color:#1b1e83;
+    font-family:'Vulf Sans Light';
+    font-size:48px;
+    margin:48px 0px;
+    text-align:left;
+}
+.need-more-items{
+    padding-left: 54px;
+    padding-right: 13.5px;
+}
+.need-more-h{
+    color:#1b1e83;
+    font-family:Vulf Sans Regular;
+    font-size:28px;
+    line-height:37.5px;
+    margin:15px 0px;
+    text-align:center;
+}
+.need-more-p{
+    color:#333333;
+    font-family:Disclaimer Regular;
+    font-size:21px;
+    font-weight:100;
+    line-height:31.5px;
+    margin:0px 0px 15px;
+    text-align:center;
+}
+.btn-need-more{
+    margin: auto;
+    padding: 12px 34px;
+    color:#1a237e;
+}
+.btn-need-more:hover, .sub-btn:hover{
+    color:#1a237e;
+}
+/* CSS for footer */
+.item-separate{
+    display: block;
+    padding-left: 7px;
+    padding-right: 5px;   
+    height: 10px;   
+    border-left: 1px solid #6d6d6d;
+}
+.footer-item{
+    color:#6d6d6d;
+    display:inline;
+    font-size:17px;
+    font-weight:100;
+    line-height:25.5px;
+}
+.footer-item:hover > span{
+    color: #6d6d6d;
+    text-decoration: underline;
+}
+.first-item{
+    padding-right: 5px;
+}
+/* responsive for mobile */
+@media (max-width: 740px){
+    .edmodo-logo{
+        margin-left: 10px;
+    }
+    .navbar-toggler{
+        position: relative;    
+        display: flex;    
+        flex-direction: row-reverse;
+    }
+    .navbar-collapse{
+        right: 0px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(30.5px);
+        margin-right: 0px !important;
+        box-shadow: 4px 5px 4px #cac6c6;
+
+    }
+    .language-contain{
+        padding-left: 22px;
+        line-height: 60px;
+        background-color: #fff;
+        border-top: 1px solid rgb(233, 218, 218);
+        border-left: 1px solid #f0f0f0;
+    }
+    
+    .language-list a{
+        padding: 0 33.5px;
+        color: #1a237e;
+    }
+    .sub-btn{
+        margin-top: -4.5px;
+        outline-color: none;
+    }
+    .search-box{        
+        flex-direction: column;
+    }
+    .search-title{
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 44px;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .search-img{
+        margin-top: 24px;
+    }
+    .library-category{
+        margin-top: 0;
+    }
+    .library-container{
+        padding: 10px 0px;
+    }
+    .library-title{
+        font-size: 36px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    .library-title-1{
+        padding: 0px 12px;
+        color:#1b1e83;
+        margin-left: -10% !important;
+        /* margin-right: 12px; */
+        font-size: 24px;
+        line-height: 0.5;
+        /* margin-left: 10px; */
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .library-title-1-sub{
+        margin-left: -20% !important;
+    }
+    .library-img{
+        /* width: 70%; */
+        height:50%;
+        width: 50%;
+        margin-left: 20%;
+    }
+    .library-img-sub{
+        /* margin-left:10%px; */
+    }
+    .library-container{
+        margin-top: 20px;
+    }
+    .main-sp-library{
+        /* text-align: center; */
+        padding-bottom: 60px;
+        margin-bottom: 40px;
+    }
+    .need-title{
+        color:#1b1e83;
+        font-family:'Vulf Sans Light';
+        font-size:36px;
+        line-height:72px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        
+    }
+    .need-more-items{
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 15px;
+    }
+    .btn-need-more{
+        width: 100%;
+        padding: 12px 28px;
+        color:#1a237e;
+    }         
+}
+/* responsive for tablet */
+
+@media (min-width: 740px) and (max-width:1023px){
+    .edmodo-logo{
+        margin-left: 10px;
+    }
+    .navbar-toggler{        
+        position: relative;    
+        display: flex;            
+    }
+    .navbar-collapse{
+        right: 0px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(30.5px);
+        margin-right: 0px !important;
+        box-shadow: 4px 5px 4px #cac6c6;
+    }
+    .search-title br{
+        /* display: none; */
+    }
+    .search-img{
+        margin-top: -20px !important;
+        width: 90%;
+    }
+    
+    .language-contain{
+        padding: 0px 30px;
+        line-height: 60px;
+        background-color: #fff;
+        border-top: 1px solid rgb(233, 218, 218);
+        border-left: 1px solid #f0f0f0;
+    }
+    .language-default{
+        margin-left: 38px;
+    }
+    .language-list a{
+        padding: 0 71.5px;
+        color: #1a237e;
+    }
+    .sub-btn{
+        margin-top: -4.5px;
+        outline-color: none;
+        padding: 5px 50px;
+    }   
+    .search-title{
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 48px;
+        line-height: 1.2
+        /* text-align: center; */
+    }
+    .search-img{
+        margin-top: 24px;
+    }
+    .library-category{
+        margin-top: 0;
+    }
+    .library-container{
+        padding: 10px 0px;
+    }
+    .library-title{
+        margin-top: 30px;
+        font-size: 42px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    .library-title-1{
+        padding: 0px 12px;
+        color:#1b1e83;
+        margin-left: -10% !important;
+        font-size: 24px;
+        line-height: 0.5;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .library-title-1-sub{
+        margin-left: -20% !important;
+    }
+    .library-img{
+        height:50%;
+        width: 50%;
+        margin-left: 20%;
+        padding: 0px 0px !important;
+    }
+    .library-container{
+        margin-top: 20px;
+    }
+    .main-sp-library{
+        padding-bottom: 60px;
+        margin-bottom: 40px;
+    }
+    .need-title{
+        color:#1b1e83;
+        font-family:'Vulf Sans Light';
+        font-size:36px;
+        line-height:72px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        
+    }
+    .need-more-items{
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 15px;
+    }
+    .need-more-p{
+        padding-left:10px;
+        
+    }
+    .btn-need-more{
+        padding: 12px 28px;
+        color:#1a237e;
+    }          
+}
