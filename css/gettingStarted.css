@@ -11,6 +11,14 @@ h2 {
 * {
   box-sizing: border-box;
 }
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
 /* CSS FOR HEADER */
 .header-navbar {
   padding: 0;
@@ -304,6 +312,38 @@ body {
   font-family: Vulf Sans Light;
   font-size: 24px;
   line-height: 36px;
+}
+.fusion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcomenote {
+  margin-left: 25px;
+  float: right;
+  width: 100%;
+  max-width: 200px;
+  margin-right: 45px;
+}
+.fusion p {
+  color: #4e5565;
+  font-family: Disclaimer Medium;
+  line-height: 30px;
+  margin: 0px 0px 20px;
+  font-size: 20px;
+  padding-right: 20px;
+}
+.fusion h3 {
+  color: #19237e;
+  display: inline;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  font-family: Vulf Sans Light;
+  line-height: 36px;
+  font-size: 24px;
+  padding: 0px 0px 5px;
 }
 
 /* CSS FOR FOOTER */
