@@ -1,0 +1,199 @@
+/* css for header */
+*{
+    padding: 0;
+    margin: 0;
+}
+.col-md-12{
+    margin: 0;
+    padding: 0;
+}
+.header-navbar {
+padding: 0;
+height: 60px;
+margin: 0;
+}
+
+.navbar {
+padding: 0 0;
+height: 60px;
+background-color: #ffffff;
+box-shadow: #000000 0px -2px 4px 0px;
+color: #212529;
+line-height: 20px;
+margin: 0px 0px 36px;
+}
+
+.navbar_header {
+color: #212529;
+display: flex;
+justify-content: space-between;
+line-height: 20px;
+margin: 0px 34.5px;
+padding: 0px 6px;
+}
+
+.learn-more_dad{
+position: relative;
+cursor: pointer;
+color: rgba(0,0,0,.55);
+}
+
+.learn-more_dad-title{
+color: rgba(0,0,0,.55) !important;
+}
+
+.learn-more_list{
+position: absolute;
+display: none;
+list-style: none;
+padding-left: 0;
+left: 0;
+z-index: 1;
+box-shadow: 0px 4px 4px 0px #cac6c6;
+background-color: #ffff;
+border-top: 1px solid rgba(0,0,0,.1) ;
+}
+
+.learn-mode_item{
+padding: 0 0 !important;
+}
+
+.learn-more_item li{
+padding-left: 0;
+}
+
+.learn-more_dad:hover > .learn-more_list{
+display: block;
+}
+
+.up-hover{
+display: none;
+}
+
+.learn-more_dad:hover .down-hover{
+display: none;
+}
+
+.learn-more_dad:hover .up-hover{
+display: inline-block;
+}
+
+.learn-more_list a{
+color: rgba(0,0,0,.55);
+}
+
+.signup-btn,
+.login-btn {
+display: block;
+line-height: 60px;
+cursor: pointer;
+}
+
+.nav-item {
+line-height: 60px;
+padding: 0 12px;
+}
+
+.nav-link {
+display: block;
+padding: 0;
+}
+
+.edmodo-img {
+top: 50%;
+transform: translateY(-50% + 1);
+}
+
+.btn-show {
+padding: 0 24px;
+}
+
+.footer-learn-more{
+margin-left: -32px;
+}
+
+.learnmore_items,
+.nav-item:hover {
+background-color: #f4f4f7;
+color: #5c6178;
+}
+/* css for footer */
+.list-inf {
+font-size: 14px;
+}
+
+.list-inf li {
+padding: 2px 0px;
+}
+
+.list-inf > li > a {
+color: #1a237e;
+font-family: "Times New Roman", Times, serif;
+}
+
+.list-inf > li:hover {
+text-decoration: underline;
+}
+
+.list-inf_item {
+white-space: nowrap;
+text-overflow: clip;
+}
+
+.footer-lable {
+font-size: 16px;
+font-family: "Disclaimer Regular", Helvetica "Neue", Helvetica, sans-serif;
+} 
+
+.footer-lable-2 {
+font-size: 11px;
+text-align: justify;
+opacity: 0.6;
+}
+
+.form-select {
+width: 50%;
+}
+
+.resource{
+padding-right: 24px;
+}
+
+@media (max-width: 1023px){
+    .btn-show{
+        margin-right: -36px;
+        height: 40px;
+    }
+    .sub-menu-header{
+        position: absolute;
+        width: 100%;
+        line-height: 60px;
+        background-color: #fff;
+        border-top: 1px solid rgb(233, 218, 218);
+        border-left: 1px solid #f0f0f0;
+        top: 50%;
+        transform: translateY(29.8px);
+    }
+    .learn-more_list{
+        width: 100%;
+    }
+    .login-btn{
+        margin-top: -18px;
+    } 
+    .signup-btn{
+        margin-bottom: -8px;
+        margin-right: -10px;
+    } 
+    .signup-btn span{
+        margin-left: 10px;
+    }
+    .footer {
+        padding-left: 0 !important;
+    }
+    .footer h6{
+        margin-bottom: 10px !important;
+    }
+}
+@media (min-width: 741px) and (max-width: 1023) {
+    
+}

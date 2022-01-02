@@ -1,0 +1,126 @@
+/* css for blog.main */
+.img-contain{
+    padding: 10px 15px;
+}
+.main_blog{
+    margin-top: 100px;
+}
+.main_lable-1{
+    color: #1b1e83;
+    font-family: 'Vulf Sans Regular';
+    font-size: 32px;
+    line-height: 27px;
+    cursor: pointer;
+}
+.main_lable-1:hover{
+    color: #1b1e83;
+}
+.main_lable-2{
+    color:#4e5565;
+    font-family:'Disclaimer' Medium;
+    font-size:12px;
+    line-height:1;
+}
+.main_lable-2:hover{
+    color:#4e5565;
+}
+
+.main_lable-3{
+    text-align: justify;
+    color: #4e5565;
+}
+/* css card */
+.read-more{
+    margin-bottom: 10px;
+    color:#ff6f00;
+    display:inline-block;
+    font-family: 'Disclaimer Medium';
+    font-size: 21px;
+    line-height: 31.5px;
+    font-weight: 500;
+    /* tao chuyen dong */
+    position: relative;
+    right:0;    
+    transition: right linear 0.1s;
+}
+.title-md-6{
+    color:#1b1e83;
+    display:inline;
+    font-family:Vulf Sans Regular;
+    font-size:26px;
+    line-height:27px;
+    cursor: pointer;
+
+}
+.title-md-6:hover{
+    color:#1b1e83;
+}
+.main_lable-md-6{
+    color:#4e5565;
+    font-family:Disclaimer Medium;
+    font-size:12px;
+    line-height:18px;
+}
+.main_lable-md-6:hover{
+    color:#4e5565;
+}
+.card-text-md-6{
+    color:#4e5565;
+    font-family:Disclaimer Regular;
+    font-size:17px;
+    line-height:23.8px;
+}
+.card-title-md-4{
+    color:#1b1e83;
+    display:inline;
+    font-family:Vulf Sans Regular;
+    font-size:18px;
+    line-height:18px;
+}
+.card-title-md-4:hover{
+    color:#1b1e83;
+    cursor: pointer;
+}
+
+.card-text-md-4{
+    color:#4e5565;
+    font-family:Disclaimer Regular;
+    font-size:14px;
+    line-height:19.6px;
+}
+.small{
+    font-size:14px;
+    line-height:21px;
+}
+.read-more:hover{
+    right: -5px;
+    color: #ff6f00;
+}
+.card-img-top{
+}
+
+#blog-hiden{
+    display: none;
+}
+.load-more{
+    margin-bottom: 100px
+}
+.load-more-lable{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+@media (max-width: 740px){
+    .main_lable-1{
+        color: #1b1e83;
+        font-size: 28px;
+        line-height: 1.2;
+    }
+    .margin-top-4{
+        margin-top: 22.5px;
+    }
+    .small{
+        font-size: 16px;
+        margin-left: 82px;
+    }
+}
