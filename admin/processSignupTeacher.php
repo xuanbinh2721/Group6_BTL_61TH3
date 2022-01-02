@@ -7,11 +7,10 @@ else{
     $user = $_POST['username'];
     $email = $_POST['email'];
     $pass = $_POST['pass'];
-    $conn = mysqli_connect('localhost','root','','edmodo');
-    if(!$conn){
-        die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
-    }
-    $sql1 = "SELECT * FROM users WHERE name='$user' OR email='$email'";
+    $user= htmlspecialchars($user);
+    $email = htmlspecialchars($email);  
+    require '../config/dbconfig.php';
+    $sql1 = "SELECT * FROM usersteacher WHERE name='$user' OR email='$email'";
     $result1 = mysqli_query($conn,$sql1);
     if(mysqli_num_rows($result1) > 0){
         $error = "Username or Email is existed";
@@ -21,7 +20,7 @@ else{
     else{
         $token = md5($_POST['email']).rand(10,9999);
         $pass_hash=password_hash($pass,PASSWORD_DEFAULT);
-        $sql2 = "INSERT INTO users (name, email, email_verification_link ,password) VALUES('$user', '$email', ' $token ', '$pass_hash')";
+        $sql2 = "INSERT INTO usersteacher (name, email, email_verification_link ,password) VALUES('$user', '$email', ' $token ', '$pass_hash')";
         $result2 = mysqli_query($conn,$sql2);
         $link = "<a href='http://localhost/project07/verify.php?key=".$email."&token=".$token."'>Click and Verify Email</a>";
         if($result2 == true){

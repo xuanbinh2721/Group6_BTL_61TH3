@@ -25,11 +25,11 @@
 <main class="container-fluid">
 <div class="wrapper">
     <div class="card">
-        <form action="processSignup.php" method="post" class="d-flex flex-column">
+        <form action="processSignupTeacher.php" method="post" class="d-flex flex-column">
             <div class="h3 text-center text-black">Sign up</div>
-            <div class="d-flex align-items-center input-field my-3 "> 
+            <div class="d-flex align-items-center input-field my-3"> 
               <span class="fa fa-user p-2"></span> 
-              <input type="text" placeholder="Username " required class="form-control" id="username" name="username"> 
+              <input type="text" placeholder="Username" required class="form-control" id="username" name="name"> 
             </div>
             <small id="userNotification"></small>
             <div class="d-flex align-items-center input-field my-3"> 
