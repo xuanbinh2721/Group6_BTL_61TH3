@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="../css/login.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../admin/js/scripts.js"></script>
+    <script src="../Login-Signup/js/scripts.js"></script>
 </head>
 <body>
 <header class="header-navbar container-fluid fixed-top">
