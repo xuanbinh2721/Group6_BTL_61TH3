@@ -10,7 +10,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
   <link rel="stylesheet" href="../../css/main.css">
   <link rel="stylesheet" href="../../css/students.css" />
-  <title>Edmodo</title>
+  <title>Students</title>
 </head>
 
 <body>
@@ -19,7 +19,9 @@
       <div class="col-md-12">
         <nav class="navbar navbar-expand-lg navbar-light ">
           <div class="navbar-contain container-fluid ms-5 me-5 navbar_header">
-            <img src="../../img/edomoicon.png" alt="" class="img-fluid edmodo-img me-2" />
+            <a href="../../index.php">
+              <img src="../../img/edomoicon.png" alt="" class="img-fluid edmodo-img me-2" >
+            </a>
 
             <button class="navbar-toggler btn-show" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -34,34 +36,34 @@
                   </a>
                   <ul class="learn-more_list">
                     <li>
-                      <a class="dropdown-item learn-more_item border-bottom" href="./Edomo_items/learnmore/teachers.html">Teachers</a>
+                      <a class="dropdown-item learn-more_item border-bottom" href="./teachers.php">Teachers</a>
                     </li> 
                     <li>
-                      <a class="dropdown-item border-bottom" href="./Edomo_items/learnmore/students.html">Students</a>
+                      <a class="dropdown-item border-bottom" href="./students.php">Students</a>
                     </li>
-                    <a class="dropdown-item border-bottom" href="./Edomo_items/learnmore/sdo.html">Schools, Districts, & Organization</a>
+                    <a class="dropdown-item border-bottom" href="./sdo.php">Schools, Districts, & Organization</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="./Edomo_items/learnmore/dlt.html">Distance learning toolkit</a>
+                      <a class="dropdown-item" href="./dlt.php">Distance learning toolkit</a>
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./Edomo_items/blog.html">Blog</a>
+                  <a class="nav-link" href="../blog.php">Blog</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./Edomo_items/support.html">Support</a>
+                  <a class="nav-link" href="../support.php">Support</a>
                 </li>
                 <li class="nav-item">
-                  <a href="./Edomo_items/gettingStarted.html" class="nav-link">Getting Started</a>
+                  <a href="./gettingStarted.php" class="nav-link">Getting Started</a>
                 </li>
               </ul>
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="login-btn nav-link">Log In</a>
+                  <a class="login-btn nav-link" href="../../Login-Signup/login.php">Log In</a>
                 </li>
                 <li class="nav-item-1">
-                  <a class="signup-btn nav-link bg-warning">
+                  <a class="signup-btn nav-link bg-warning" href = "../../Login-Signup/signup.php">
                     <span>Sign Up</span> 
                   </a>
                 </li>
@@ -72,68 +74,73 @@
       </div>
     </div>
   </header>
-
-
-  <main class="container-fluid">
+  <main class="container-fluid">   
+    <div class="row">
+        <div class="col-md-6 ">
+          <img src="../../img/learnmore-2-1.png" alt="" class = "img-fluid pt-5  ps-5 learnmore-2-1">
+        </div>
+        <div class="col-md-6 intro1">
+          <h3>Your best work starts here</h3>
+          <p>Stay updated. Stay organized. See yourself grow.</p>
+          <button class ="btn bg-warning btn-learnmore-2">Create a Student Account</button>
+        </div>
+      </div>
     
-        <div class="row">
-            <div class="col-md-6 ">
-             <img src="../../img/learnmore-2-1.png" alt="" class = "img-fluid pt-5  ps-5 learnmore-2-1">
-            </div>
-            <div class="col-md-6 intro1">
-             <h3>Your best work starts here</h3>
-             <p>Stay updated. Stay organized. See yourself grow.</p>
-             <button class ="btn bg-warning btn-learnmore-2">Create a Student Account</button>
-            </div>
-         </div>
-       
-         <div class="row">
-             <div class="col-md-6 intro2">
-                 <h3>Stay on track</h3>
-                 <p>There’s always a lot going on at school. Edmodo organizes your work with class folders and a built-in Planner, so that you can stress less.</p>
-                 <span>Get started for free</span>
-             </div>
-             <div class="col-md-6">
-                 <img src="../../img/learnmore-2-2.png" alt="" class = "img-fluid pt-5 mt-5  pe-5 learnmore-2-2">
-             </div>
-         </div>
-     
-         <div class="row">
-             <div class="col-md-6">
-                 <img src="../../img/learnmore-2-3.png" alt="" class = "img-fluid pt-5 mt-5 ps-5 learnmore-2-3">
-             </div>
-             <div class="col-md-6 intro3">
-                 <h3>Get the answers you need</h3>
-                 <p>Hate it when class ends and you still have questions? With Edmodo, it’s easy to message your teacher or get help from your classmates.</p>
-                 <span>Get started for free</span>
-             </div>
-         </div>
- 
-         <div class="row">
-             <div class="col-md-6 intro4">
-                 <h3>Discover your next passion</h3>
-                 <p>Your next fixation is around the corner. With mindfulness activities, games, and more on Discover, you can find your next favorite topic on Edmodo.</p>
-                 <span>Get started for free</span>
-             </div>
-             <div class="col-md-6">
-                 <img src="../../img/learnmore-2-4.png" alt="" class = "img-fluid pt-5 mt-5 pe-5 learnmore-2-4">
-             </div>
-         </div>
-         <a href="#" id="scrollTop"><i class="bi bi-caret-up-fill "></i></a>   
+      <div class="row">
+          <div class="col-md-6 intro2">
+              <h3>Stay on track</h3>
+              <p>There’s always a lot going on at school. Edmodo organizes your work with class folders and a built-in Planner, so that you can stress less.</p>
+              <span>Get started for free</span>
+          </div>
+          <div class="col-md-6">
+              <img src="../../img/learnmore-2-2.png" alt="" class = "img-fluid pt-5 mt-5  pe-5 learnmore-2-2">
+          </div>
+      </div>
+  
+      <div class="row">
+          <div class="col-md-6">
+              <img src="../../img/learnmore-2-3.png" alt="" class = "img-fluid pt-5 mt-5 ps-5 learnmore-2-3">
+          </div>
+          <div class="col-md-6 intro3">
+              <h3>Get the answers you need</h3>
+              <p>Hate it when class ends and you still have questions? With Edmodo, it’s easy to message your teacher or get help from your classmates.</p>
+              <span>Get started for free</span>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-md-6 intro4">
+              <h3>Discover your next passion</h3>
+              <p>Your next fixation is around the corner. With mindfulness activities, games, and more on Discover, you can find your next favorite topic on Edmodo.</p>
+              <span>Get started for free</span>
+          </div>
+          <div class="col-md-6">
+              <img src="../../img/learnmore-2-4.png" alt="" class = "img-fluid pt-5 mt-5 pe-5 learnmore-2-4">
+          </div>
+      </div>
+    </div>
+    <a href="#" id="scrollTop"><i class="bi bi-caret-up-fill "></i></a>   
   </main>
   <hr>
+  <script>
+  window.onscroll = function() {scrollFunction()};
 
-  
+    scrollFunction = () => {
+        if(document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+            document.querySelector('#scrollTop').style.bottom = '0';
+        } else document.querySelector('#scrollTop').style.bottom = '-56px';
+    }
+  </script> 
   <footer class="ps-4 mb-3">
     <div class=" container-fluid footer">
       <div class="row">
         <div class="edmodo-footer col-md-12 mb-3">
-          <img src="img/edomoicon.png" alt="">
+          <img src="../../img/edomoicon.png" alt="" />
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-sm-4">
           <p class="footer-lable">
             Edmodo is a global education network that helps connect all
             learners with the people and resources needed to reach their full
@@ -151,20 +158,21 @@
               located in China
             </p>
           </div>
-          <select class="form-select mb-3 w-50" aria-label="Default select example">
+          <select class="form-select" aria-label="Default select example">
             <option selected>
               <i class="bi bi-globe"></i>Language
             </option>
             <option value="1">Vietnamese</option>
             <option value="2">Germany</option>
             <option value="3">English0 (UK)</option>
-            <option value="4">English1 (UK)</option>
-            <option value="5">English2 (UK)</option>
-            <option value="6">English3 (UK)</option>
+            <option value="3">English1 (UK)</option>
+            <option value="3">English2 (UK)</option>
+            <option value="3">English3 (UK)</option>
 
           </select>
         </div>
-        <div class="col-md-2">
+
+        <div class="col-sm-2">
           <h6 class="mb-3 lead">Company</h6>
           <ul class="list-inf list-unstyled">
             <li>
@@ -187,41 +195,41 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-2">
-          <h6 class="mb-3 lead ">Learn more</h6>
+        <div class="col-sm-2">
+          <h6 class="mb-3 lead">Learn more</h6>
           <ul class="list-inf list-unstyled">
             <li>
-              <a href="./Edomo_items/learnmore/teachers.html" class="text-decoration-none">Teachers</a>
+              <a href="./teachers.php" class="text-decoration-none">Teachers</a>
             </li>
             <li>
-              <a href="./Edomo_items/learnmore/students.html" class="text-decoration-none">Students</a>
+              <a href="./students.php" class="text-decoration-none">Students</a>
             </li>
             <li>
-              <a href="./Edomo_items/learnmore/students.html" class="text-decoration-none">Parents</a>
+              <a href="#" class="text-decoration-none">Parents</a>
             </li>
             <li>
-              <a href="./Edomo_items/learnmore/sdo.html" class="list-inf_item text-decoration-none">School, Districts, & Organization</a>
+              <a href="./sdo.php" class="list-inf_item text-decoration-none">School, Districts, & Organization</a>
             </li>
             <li>
-              <a href="./Edomo_items/learnmore/dlt.html" class="list-inf_item text-decoration-none">Distance Learning Toolkit</a>
+              <a href="./dlt.php" class="text-decoration-none">Distance Learning Toolkit</a>
             </li>
           </ul>
         </div>
-        <div class="col-md-2">
-          <h6 class="mb-3 lead resource">Resources</h6>
-          <ul class="list-inf list-unstyled resource">
+        <div class="col-sm-2">
+          <h6 class="ps-2 mb-3 lead">Resources</h6>
+          <ul class="ps-2 list-inf list-unstyled">
             <li>
-              <a href="#!" class="text-decoration-none">Blog</a>
+              <a href="../blog.php" class="text-decoration-none">Blog</a>
             </li>
             <li>
-              <a href="./Edomo_items/support.html" class="text-decoration-none">Support</a>
+              <a href="../support.php" class="text-decoration-none">Support</a>
             </li>
             <li>
-              <a href="./Edomo_items/gettingStarted.html" class="text-decoration-none">Getting Started</a>
+              <a href="../gettingStarted.php" class="text-decoration-none">Getting Started</a>
             </li>
           </ul>
         </div>
-        <div class="col-md-2">
+        <div class="col-sm-2">
           <h6 class="mb-3 lead">Connet</h6>
           <ul class="list-inf list-unstyled">
             <li>
@@ -234,15 +242,6 @@
         </div>
       </div>
     </div>
-    <script>
-      window.onscroll = function() {scrollFunction()};  
- 
-       scrollFunction = () => {
-           if(document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-               document.querySelector('#scrollTop').style.bottom = '0';
-           } else document.querySelector('#scrollTop').style.bottom = '-56px';
-       }
-   </script>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
