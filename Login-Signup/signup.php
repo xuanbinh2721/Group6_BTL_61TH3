@@ -30,7 +30,7 @@
         </a>
         <h3 class="">Choose an account</h3>
         <div class="user-options">
-            <a href="./signupTeacher.php" class="btn btn-light btn-choose"> 
+            <a href="./signupTeacher.php" class="btn  btn-choose"> 
                 <div class="choose-teacher">
                     <div class="choose-teacher-img">
                         <i class="fas fa-school"></i>
@@ -41,7 +41,7 @@
                     </div>
                 </div>    
             </a>
-            <a  href="./signupStudent.php" class=" mt-4 btn btn-light btn-choose"> 
+            <a  href="./signupStudent.php" class=" mt-4 btn  btn-choose"> 
                 <div class="choose-teacher">
                     <div class="choose-student-img">
                         <i class="fas fa-user-graduate"></i>

@@ -21,14 +21,7 @@ body {
   background-color: #ffca28;
   min-height: 93vh;
 }
-.btn-light{
-  background-color: #ffca28;
-}
-.btn-light:hover {
-  color: #000;
-  /* background-color: #f9fafb; */
-  border-color: #f9fafb;
-}
+
 
 .signupOption {
   background-color: #ffca28;
@@ -58,6 +51,10 @@ body {
 .btn-choose{
   border: 1px solid #ddd;
 }
+.btn:hover{
+  border: 1px solid #fff;
+}
+
 .choose-teacher{
   display: flex;
   align-items: center;
