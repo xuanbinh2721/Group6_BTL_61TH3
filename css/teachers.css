@@ -71,28 +71,28 @@
 .btn-contact-us{
     margin-left: 40px;
 }
-  .submit h3{
-    font-size: 40px;
-  }
-  .submit p{
-    font-size: 23px;
-    margin-top: 20px;
-  }
-  /* #scrollTop {
-    position: fixed;
-    bottom: -56px;
-    right: 60px;
-    background: rgb(53, 53, 53);
-    color: white;
-    font-size: 20px;
-    padding: 8px 16px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    cursor: pointer;
-    display: block;
-    text-decoration: none;
+.submit h3{
+  font-size: 40px;
+}
+.submit p{
+  font-size: 23px;
+  margin-top: 20px;
+}
+#scrollTop {
+  position: fixed;
+  bottom: -56px;
+  right: 60px;
+  background: rgb(53, 53, 53);
+  color: white;
+  font-size: 20px;
+  padding: 8px 16px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
 }
 #scrollTop:hover {
     color: white;
-} */
+}
  
