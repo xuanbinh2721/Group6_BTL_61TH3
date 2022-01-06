@@ -55,7 +55,7 @@ body {
 }
 .choose-teacher-img{
   border-radius: 50%;
-  background: #e8eaf6;
+  background: #a5b2ff;
   font-size: 44px !important;
   padding: 10px 16px;
   margin: 0 10px;
@@ -63,7 +63,7 @@ body {
 }
 .choose-student-img{
   border-radius: 50%;
-  background: #e8eaf6;
+  background: #a5b2ff;
   font-size: 44px !important;
   padding: 8px 24px;
   margin: 0 10px;
