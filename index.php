@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Edmodo</title>
 </head>
 
@@ -17,8 +17,8 @@
   <header class="header-navbar container-fluid fixed-top">
     <div class="row">
       <div class="col-md-12">
-        <nav class="navbar navbar-expand-lg navbar-light ">
-          <div class="navbar-contain container-fluid ms-5 me-5 navbar_header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="navbar-contain container-fluid ms-5 me-5 navbar_header">            
             <img src="./img/edomoicon.png" alt="" class="img-fluid edmodo-img me-2" />
 
             <button class="navbar-toggler btn-show" type="button" data-bs-toggle="collapse"
@@ -34,34 +34,34 @@
                   </a>
                   <ul class="learn-more_list">
                     <li>
-                      <a class="dropdown-item learn-more_item border-bottom" href="./Edomo_items/learnmore/teachers.html">Teachers</a>
+                      <a class="dropdown-item learn-more_item border-bottom" href="./Edomo_items/learnmore/teachers.php">Teachers</a>
                     </li> 
                     <li>
-                      <a class="dropdown-item border-bottom" href="./Edomo_items/learnmore/students.html">Students</a>
+                      <a class="dropdown-item border-bottom" href="./Edomo_items/learnmore/students.php">Students</a>
                     </li>
-                    <a class="dropdown-item border-bottom" href="./Edomo_items/learnmore/sdo.html">Schools, Districts, & Organization</a>
+                    <a class="dropdown-item border-bottom" href="./Edomo_items/learnmore/sdo.php">Schools, Districts, & Organization</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="./Edomo_items/learnmore/dlt.html">Distance learning toolkit</a>
+                      <a class="dropdown-item" href="./Edomo_items/learnmore/dlt.php">Distance learning toolkit</a>
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./Edomo_items/blog.html">Blog</a>
+                  <a class="nav-link" href="./Edomo_items/blog.php">Blog</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./Edomo_items/support.html">Support</a>
+                  <a class="nav-link" href="./Edomo_items/support.php">Support</a>
                 </li>
                 <li class="nav-item">
-                  <a href="./Edomo_items/gettingStarted.html" class="nav-link">Getting Started</a>
+                  <a href="./Edomo_items/gettingStarted.php" class="nav-link">Getting Started</a>
                 </li>
               </ul>
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="login-btn nav-link">Log In</a>
+                  <a class="login-btn nav-link" href="./Login-Signup/login.php">Log In</a>
                 </li>
                 <li class="nav-item-1">
-                  <a class="signup-btn nav-link bg-warning">
+                  <a class="signup-btn nav-link bg-warning" href="./Login-Signup/signup.php">
                     <span>Sign Up</span> 
                   </a>
                 </li>
@@ -103,7 +103,7 @@
             <span>Manage your classroom. Engage your students.</span><br>
             <span>Safe. Simple. Free.</span>
           </div>
-          <a href="./Edomo_items/signup.html"><button type="button" class="btn btn-warning mt-4 btn_signup">
+          <a href="./Login-Signup/signup.php"><button type="button" class="btn btn-warning mt-4 btn_signup">
               <span class="signup_btn">Sign up for a free account</span>
             </button>
           </a>
@@ -210,16 +210,19 @@
           <h6 class="mb-3 lead ">Learn more</h6>
           <ul class="list-inf list-unstyled">
             <li>
-              <a href="./Edomo_items/learnmore/teachers.html" class="text-decoration-none">Teachers</a>
+              <a href="./Edomo_items/learnmore/teachers.php" class="text-decoration-none">Teachers</a>
             </li>
             <li>
-              <a href="./Edomo_items/learnmore/students.html" class="text-decoration-none">Students</a>
+              <a href="./Edomo_items/learnmore/students.php" class="text-decoration-none">Students</a>
             </li>
             <li>
-              <a href="./Edomo_items/learnmore/sdo.html" class="list-inf_item text-decoration-none">School, Districts, & Organization</a>
+              <a href="./Edomo_items/learnmore/students.php" class="text-decoration-none">Parents</a>
             </li>
             <li>
-              <a href="./Edomo_items/learnmore/dlt.html" class="list-inf_item text-decoration-none">Distance Learning Toolkit</a>
+              <a href="./Edomo_items/learnmore/sdo.php" class="list-inf_item text-decoration-none">School, Districts, & Organization</a>
+            </li>
+            <li>
+              <a href="./Edomo_items/learnmore/dlt.php" class="list-inf_item text-decoration-none">Distance Learning Toolkit</a>
             </li>
           </ul>
         </div>
@@ -227,13 +230,13 @@
           <h6 class="mb-3 lead resource">Resources</h6>
           <ul class="list-inf list-unstyled resource">
             <li>
-              <a href="#!" class="text-decoration-none">Blog</a>
+              <a href="./Edomo_items/blog.php" class="text-decoration-none">Blog</a>
             </li>
             <li>
-              <a href="./Edomo_items/support.html" class="text-decoration-none">Support</a>
+              <a href="./Edomo_items/support.php" class="text-decoration-none">Support</a>
             </li>
             <li>
-              <a href="./Edomo_items/gettingStarted.html" class="text-decoration-none">Getting Started</a>
+              <a href="./Edomo_items/gettingStarted.php" class="text-decoration-none">Getting Started</a>
             </li>
           </ul>
         </div>
@@ -254,7 +257,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <script src="./js/main.js"></script>
 </body>
 
 </html>
