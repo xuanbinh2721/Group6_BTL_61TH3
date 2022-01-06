@@ -14,17 +14,16 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/sp.css">
     <title>Edmodo Support</title>
 </head>
 
 <body>
-    
     <header class="header-navbar container-fluid fixed-top">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">
+              <a class="navbar-brand" href="../index.php">
                 <img src="../img/hybridArtboard-5.png" alt="" class="img-fluid edmodo-logo">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -186,19 +185,19 @@
                 </div>                
             </div>         
         </div>
-        <footer class="container mt-4">
-            <div class="row">
-                <div class="col-md-12 text-center mb-4">
-                    <a href="" class="text-decoration-none footer-item first-item "><span>Edmodo &copy; 2020</span></a>
-                    <a href="" class="text-decoration-none footer-item item-separate"><span>About</span></a>
-                    <a href="" class="text-decoration-none footer-item item-separate"><span>Careers</span></a>
-                    <a href="" class="text-decoration-none footer-item item-separate"><span>Blog</span></a>
-                    <a href="" class="text-decoration-none footer-item item-separate"><span>Newsroom</span></a>
-                    <a href="" class="text-decoration-none footer-item item-separate"><span>Term of Service</span></a>
-                </div>
-            </div>
-        </footer>
     </main>
+    <footer class="container mt-4">
+        <div class="row">
+            <div class="col-md-12 text-center mb-4">
+                <a href="" class="text-decoration-none footer-item first-item "><span>Edmodo &copy; 2020</span></a>
+                <a href="" class="text-decoration-none footer-item item-separate"><span>About</span></a>
+                <a href="" class="text-decoration-none footer-item item-separate"><span>Careers</span></a>
+                <a href="" class="text-decoration-none footer-item item-separate"><span>Blog</span></a>
+                <a href="" class="text-decoration-none footer-item item-separate"><span>Newsroom</span></a>
+                <a href="" class="text-decoration-none footer-item item-separate"><span>Term of Service</span></a>
+            </div>
+        </div>
+    </footer>
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

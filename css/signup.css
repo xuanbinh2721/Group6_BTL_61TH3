@@ -4,10 +4,6 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-.col-md-12 {
-  padding: 0;
-  margin: 0;
-}
 .header-navbar {
   padding: 0px;
   height: 52px;
@@ -19,67 +15,78 @@
   flex-wrap: wrap;
 }
 h3 {
-  margin: 0;
-  padding: 0;
-  line-height: 20px;
+  margin-top: 12px;
 }
-
-main {
-  margin-top: 10px;
-  background: #ffca28;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  height: auto;
-  min-height: 100vh;
-}
-
 body {
   background-color: #ffca28;
   min-height: 93vh;
 }
 .signupOption {
   background-color: #ffca28;
-  color: #212529;
+  /* color: #212529; */
   display: flex;
   font-size: 14px;
-  justify-content: center;
+  justify-content: center; 
   line-height: 20px;
+  margin-top: 20px;
 }
 .page-content {
   width: 560px;
   padding: 65px 42px 32px;
 }
-
+.btnBack{
+  color: #000;
+  font-size: 21px;
+  font-weight: 500;  
+  position: relative;
+  left: 0;
+  transition: left linear 0.2s;
+}
 .btnBack:hover {
-  text-decoration: underline;
+  color: #000;
+  left: -5px;
 }
-.big-button-text-image {
-  align-items: flex-start;
-  border-color: #1a237e;
-  border-radius: 12px;
-  border-style: solid;
-  border-width: 2px;
-  display: inline-block;
-  font-family: Helvetica Neue;
-  font-size: 14px;
-  line-height: 20px;
-  margin: 10px 0px 5px;
+.btn-choose{
+  border: 3px solid #8188cc ;
+}
+.choose-teacher{
+  display: flex;
+  align-items: center;
+}
+.choose-teacher-img{
+  border-radius: 50%;
+  background: #e8eaf6;
+  font-size: 44px !important;
+  padding: 10px 16px;
+  margin: 0 10px;
+  color: #1a237e;
+}
+.choose-student-img{
+  border-radius: 50%;
+  background: #e8eaf6;
+  font-size: 44px !important;
+  padding: 8px 24px;
+  margin: 0 10px;
+  color: #1a237e;
+}
+.choose-teacher-text{
+  margin-left: 10px;
+}
+.choose-teacher-text h5{
   text-align: left;
+  padding: 0;
+  margin: 0;
 }
-.row {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px;
-}
-.big-button-text-image .option-icon {
-  align-items: center;
-  background-color: #e8eaf6;
-  border-radius: 30px;
-  display: flex;
-  flex-basis: 16.6667%;
-  margin: 0px 10px 0px 0px;
+.choose-teacher-text p{
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.3;
 }
 
+.log-in, .learn-more-inf{
+  margin-top: 20px;
+  text-align: center;
+}
+.a-text:hover{
+  text-decoration: underline !important;
+}

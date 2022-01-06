@@ -24,7 +24,7 @@
         <div class="col-md-12">
           <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="navbar-contain container-fluid ms-5 me-5 navbar_header">
-              <a href="../index.html">
+              <a href="../index.php">
                 <img src="../img/hybridArtboard-5.png" alt="" class="img-fluid edmodo-img me-2">
               </a>  
               <button class="navbar-toggler btn-show" type="button" data-bs-toggle="collapse"
@@ -40,34 +40,34 @@
                     </a>
                     <ul class="learn-more_list">
                       <li>
-                        <a class="dropdown-item learn-more_item border-bottom" href="./learnmore/teachers.html">Teachers</a>
+                        <a class="dropdown-item learn-more_item border-bottom" href="./learnmore/teachers.php">Teachers</a>
                       </li> 
                       <li>
-                        <a class="dropdown-item border-bottom" href="./learnmore/students.html">Students</a>
+                        <a class="dropdown-item border-bottom" href="./learnmore/students.php">Students</a>
                       </li>
-                      <a class="dropdown-item border-bottom" href="./learnmore/sdo.html">Schools, Districts, & Organization</a>
+                      <a class="dropdown-item border-bottom" href="./learnmore/sdo.php">Schools, Districts, & Organization</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="./learnmore/dlt.html">Distance learning toolkit</a>
+                        <a class="dropdown-item" href="./learnmore/dlt.php">Distance learning toolkit</a>
                       </li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./blog.html">Blog</a>
+                    <a class="nav-link" href="./blog.php">Blog</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./support.html">Support</a>
+                    <a class="nav-link" href="./support.php">Support</a>
                   </li>
                   <li class="nav-item">
-                    <a href="./gettingStarted.html" class="nav-link">Getting Started</a>
+                    <a href="./gettingStarted.php" class="nav-link">Getting Started</a>
                   </li>
                 </ul>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="login-btn nav-link">Log In</a>
+                    <a class="login-btn nav-link" href = "../Login-Signup/login.php">Log In</a>
                   </li>
                   <li class="nav-item-1">
-                    <a class="signup-btn nav-link bg-warning">
+                    <a class="signup-btn nav-link bg-warning" href = "../Login-Signup/signup.php">
                       <span>Sign Up</span> 
                     </a>
                   </li>
@@ -83,7 +83,7 @@
         <div class="row">
           <div class="me-5 img-contain col-md-12">
             <div class="card h-100">
-              <img src="../img/blog1.jpg" class="card-img-top img-fluid" alt="">
+              <img src="../img/blog1.jpg " class="card-img-top img-fluid" alt="">
               <div class="card-body">
                 <a class="card-title text-decoration-none main_lable-1">
                   Creating Better Materials for Distance Learning and
@@ -705,21 +705,21 @@
             <h6 class="mb-3 lead">Learn more</h6>
             <ul class="list-inf list-unstyled">
               <li>
-                <a href="#!" class="text-decoration-none">Teachers</a>
+                <a href="./learnmore/teachers.php" class="text-decoration-none">Teachers</a>
               </li>
               <li>
-                <a href="#!" class="text-decoration-none">Students</a>
+                <a href="./learnmore/students.php" class="text-decoration-none">Students</a>
               </li>
               <li>
-                <a href="#!" class="text-decoration-none">Parents</a>
+                <a href="#" class="text-decoration-none">Parents</a>
               </li>
               <li>
-                <a href="#!" class="list-inf_item text-decoration-none"
+                <a href="./learnmore/sdo.php" class="list-inf_item text-decoration-none"
                   >School, Districts, & Organization</a
                 >
               </li>
               <li>
-                <a href="#!" class="text-decoration-none"
+                <a href="./learnmore/dlt.php" class="text-decoration-none"
                   >Distance Learning Toolkit</a
                 >
               </li>
@@ -729,13 +729,13 @@
             <h6 class="mb-3 lead">Resources</h6>
             <ul class="list-inf list-unstyled">
               <li>
-                <a href="#!" class="text-decoration-none">Blog</a>
+                <a href="./blog.php" class="text-decoration-none">Blog</a>
               </li>
               <li>
-                <a href="#!" class="text-decoration-none">Support</a>
+                <a href="./support.php" class="text-decoration-none">Support</a>
               </li>
               <li>
-                <a href="#!" class="text-decoration-none">Getting Started</a>
+                <a href="./gettingStarted.php" class="text-decoration-none">Getting Started</a>
               </li>
             </ul>
           </div>

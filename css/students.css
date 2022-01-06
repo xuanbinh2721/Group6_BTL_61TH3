@@ -1,162 +1,194 @@
-/* CSS FOR HEADER */
-.header-navbar {
-  padding: 0;
-  height: 60px;
-  margin: 0;
-}
-.navbar {
-  padding: 0 0;
-  height: 60px;
-  background-color: #ffffff;
-  box-shadow: #000000 0px -2px 4px 0px;
-  color: #212529;
-  line-height: 20px;
-  margin: 0px 0px 36px;
-}
-.navbar_header {
-  color: #212529;
-  display: flex;
-  justify-content: space-between;
-  line-height: 20px;
-  margin: 0px 34.5px;
-  padding: 0px 6px;
-}
-.learn-more_dad{
-  position: relative;
-  cursor: pointer;
-  color: rgba(0,0,0,.55)
-}
-.learn-more_list{
-    position: absolute;
-    display: none;
-    list-style: none;
-    padding-left: 0;
-    left: 0;
-    z-index: 1;
-    box-shadow: 0px 4px 4px 0px #cac6c6;
-    background-color: #ffff;
-}
-.learn-mode_item{
-    padding: 0 0 !important;
-}
-.learn-more_item li{
-    padding-left: 0;
-}
-.learn-more_dad:hover > .learn-more_list{
-    display: block;
-}
-.up-hover{
-    display: none;
-}
-.learn-more_dad:hover .down-hover{
-    display: none;
-}
-.learn-more_dad:hover .up-hover{
-    display: inline-block;
-}
-.btn-sd{
-    background-color:#1a237e ;
-    border-radius: 4px;
-    color: #fff;
-    line-height: 14px;
-    padding: 11px 35px;
-    text-align: left;
-  }
-.signup-btn,
-.login-btn {
-  display: block;
-  line-height: 60px;
-  cursor: pointer;
-}
-.nav-item {
-  line-height: 60px;
-  padding: 0 12px;
-}
-.nav-link {
-  display: block;
-  padding: 0;
-}
-.edmodo-img {
-  top: 50%;
-  transform: translateY(-50% + 1);
-}
-.btn-show {
-  padding: 0 24px;
-}
-.learnmore_items,
-.nav-item:hover {
-  background-color: #f4f4f7;
-  color: #5c6178;
-}
   body {
-    margin-top: 70px;
-  }
- .intro1 h3{
-    color: #1b1e83;
-    font-family: Vulf Sans Light;
-    font-size: 60px;
-    line-height: 50px;
-    margin: 150px 50px 22px;
- }
- .intro1 p, .intro2 p, .intro3 p, .intro4 p{
-    color: #4e5565;
-    font-family: Disclaimer Medium;
-    font-size: 30px;
-    line-height: 33px;
-    margin: 0px 0px 22px;
- }
- .intro1 p{
-     margin-left: 50px;
- }
- .intro2 h3,.intro3 h3, .intro4 h3{
-    color: #1b1e83;
-    font-family: Vulf Sans Light;
-    font-size: 45px;
-    line-height: 50px;
-    text-align: center;
-    margin-top: 250px; 
-    margin-bottom: 22px;
- }
- .intro2 p,.intro4 p{
-    margin-left: 100px;
- }
-
- .intro1 button {
-    font-size: 25px;
-    margin-left: 50px;
- }
-
- .intro2 span, .intro3 span, .intro4 span{
-    color: #ff6f00;
-    font-size: 30px;
-    line-height: 35px;
- }
- .intro2 span,.intro4 span {
-    margin-left: 100px;
- }
- .intro2 span:hover, .intro3 span:hover, .intro4 span:hover{
-    text-decoration: underline;
- }
- .intro3 p {
-    margin-right: 100px;
-    margin-left: 50px;
- }
- .intro3 span{
-     margin-left: 50px;
- }
-  .footer-lable {
-    font-size: 16px;
-    font-family: "Disclaimer Regular", Helvetica "Neue", Helvetica, sans-serif;
-  }
-  .footer-lable-2 {
-    font-size: 11px;
-    text-align: justify;
-    opacity: 0.6;
-  }
-  .form-select {
-    width: 40%;
-  }
-  .submit{
-    padding: 100px;
-  }
- 
+      margin-top: 70px;
+    }
+   .intro1 h3{
+      color: #1b1e83;
+      font-family: Vulf Sans Light;
+      font-size: 60px;
+      line-height: 50px;
+      margin: 150px 50px 22px;
+   }
+   .intro1 p, .intro2 p, .intro3 p, .intro4 p{
+      color: #4e5565;
+      font-family: Disclaimer Medium;
+      font-size: 30px;
+      line-height: 33px;
+      margin: 0px 0px 22px;
+   }
+   .intro1 p{
+      margin-left: 50px;
+   }
+   .intro2 h3,.intro3 h3, .intro4 h3{
+      color: #1b1e83;
+      font-family: Vulf Sans Light;
+      font-size: 45px;
+      line-height: 50px;
+      text-align: center;
+      margin-top: 250px; 
+      margin-bottom: 22px;
+   }
+   .intro2 p,.intro4 p{
+      margin-left: 100px;
+   }
+  
+   .intro1 button {
+      font-size: 25px;
+      margin-left: 50px;
+   }
+  
+   .intro2 span, .intro3 span, .intro4 span{
+      color: #ff6f00;
+      font-size: 30px;
+      line-height: 35px;
+   }
+   .intro2 span,.intro4 span {
+      margin-left: 100px;
+   }
+   .intro2 span:hover, .intro3 span:hover, .intro4 span:hover{
+      text-decoration: underline;
+   }
+   .intro3 p {
+      margin-right: 100px;
+      margin-left: 50px;
+   }
+   .intro3 span{
+       margin-left: 50px;
+   }
+   #scrollTop {
+    position: fixed;
+    bottom: -56px;
+    right: 60px;
+    background: rgb(53, 53, 53);
+    color: white;
+    font-size: 20px;
+    padding: 8px 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+}
+#scrollTop:hover {
+    color: white;
+}
+     @media (max-width: 740px) {
+        .intro1{
+          margin-top: -130px;
+          margin-bottom: -10px;
+        }
+        .intro2{
+          margin-top: -220px;
+        }
+        .intro4{
+          margin-top: -240px;
+        }
+        .intro1 h3, .intro2 h3, .intro3 h3, .intro4 h3{
+          font-size: 24px;
+        }
+        .intro1 p, .intro2 p, .intro3 p, .intro4 p{
+          font-size: 16px;
+          margin-right: 25px;
+          text-align: justify;
+          margin-top: -20px;
+        }
+        .learnmore-2-1{
+          margin-left: -9px !important;
+          max-width: 90%;
+        }
+        .learnmore-2-2{
+          margin-left: 40px;
+          margin-right: -40px;
+          max-width: 90%;
+          margin-top: -15px !important;
+        }
+        .learnmore-2-3{
+          margin-left: -15px !important;
+          margin-right: -40px !important;
+          max-width: 94%;
+          margin-top: -5px!important;
+        }
+        .learnmore-2-4{
+          margin-left: 30px;
+          max-width: 95%;
+          margin-top: -7px !important;
+          margin-bottom: 15px;
+        }
+        .btn-learnmore-2{
+          font-size: 20px !important;
+        }
+        .intro2 p, .intro2 span, .intro3 p, .intro3 span, .intro4 span , .intro4 p{
+          margin-left: 50px !important;
+          margin-top: -30px !important;
+        }
+        .intro2 h3{
+          margin-left: -37%;
+        }
+        .intro2 span, .intro3 span, .intro4 span{
+          font-size: 20px;
+        }
+        .intro3 h3{
+          margin-top: 30px;
+        }
+        #scrollTop{
+          display: none;
+        }
+        
+    } 
+      @media (min-width: 741px) and (max-width: 1023px){
+        .learnmore-2-1{
+          margin-top: 10px ;
+        }
+        .intro1{
+          margin-top: -100px;
+        }
+        .intro1 h3, .intro2 h3, .intro3 h3, .intro4 h3{
+          font-size: 24px;
+        }
+        .intro1 p, .intro2 p, .intro3 p, .intro4 p{
+          font-size: 18px;
+          margin-top: -30px;
+        }
+        .btn-learnmore-2{
+          font-size: 16px !important;
+        }
+        .intro2 {
+          margin-top: -100px;
+         
+        }
+        .intro2 span, .intro3 span, .intro4 span {
+          font-size: 20px;
+        }
+        .intro2 h3{
+          margin-left: -120px;
+        } 
+        .intro2 p{
+          margin-left: 55px;
+        }
+        .intro2 span{
+          margin-left: 55px;
+        } 
+        .learnmore-2-2{
+          margin-top: 80px !important;
+        }
+        .learnmore-2-3{
+          margin-top: 80px !important;
+        }
+        .intro3{
+          margin-top: -150px;
+        }
+        .learnmore-2-4{
+          margin-top: 80px !important;
+        }
+        .intro4{
+          margin-top: -150px;
+        }
+        .intro4 p{
+          margin-left: 50px;
+        }
+        .intro4 span {
+          margin-left: 50px;
+        }
+        #scrollTop{
+          display: none;
+        }
+      }
