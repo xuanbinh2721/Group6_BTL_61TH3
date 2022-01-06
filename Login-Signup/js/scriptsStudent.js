@@ -7,7 +7,7 @@ $(document).ready(function(){
         }
         else{
             $.ajax({
-                url: "processCheckUsername.php",
+                url: "processCheckUsernameStudent.php",
                 type: "post",
                 data: {name:$(this).val()},
 
@@ -30,7 +30,7 @@ $(document).ready(function(){
         }
         else{
             $.ajax({
-                url: "processCheckEmail.php",
+                url: "processCheckEmailStudent.php",
                 type: "post",
                 data: {email:$(this).val()},
 
