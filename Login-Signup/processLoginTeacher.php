@@ -4,6 +4,8 @@ if(isset($_POST['btnLogin'])){
     $user =$_POST['user'];
     $pass= $_POST['pass'];
     $email = $user;
+    $user=htmlspecialchars($user);
+    $pass=htmlspecialchars($pass);
     require "../config/dbconfig.php";
     $sql= "SELECT * FROM usersteacher WHERE email = ? OR name = ? AND status = 1";
     $stmt = mysqli_prepare($conn,$sql);

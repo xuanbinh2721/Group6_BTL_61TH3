@@ -28,26 +28,26 @@
             <i class="fas fa-angle-left"></i> 
             <span>Back</span>
         </a>
-        <h3 class="">Choose an account</h3>
+        <h3 class="">Choose an account to login</h3>
         <div class="user-options">
-            <a href="./signupTeacher.php" class="btn  btn-choose"> 
+            <a href="./loginTeacher.php" class="btn  btn-choose"> 
                 <div class="choose-teacher">
                     <div class="choose-teacher-img">
                         <i class="fas fa-school"></i>
                     </div>
                     <div class="choose-teacher-text">
-                        <h5 class="mt-1 mb-2">Teacher Account</h5>
+                        <h5 class="mt-1 mb-2">Log In For An Teacher Account</h5>
                         <p>For teachers, co-teachers, admins, coaches, club advisors, instructional tech.</p>
                     </div>
                 </div>    
             </a>
-            <a  href="./signupStudent.php" class=" mt-4 btn  btn-choose"> 
+            <a  href="./loginStudent.php" class=" mt-4 btn  btn-choose"> 
                 <div class="choose-teacher">
                     <div class="choose-student-img">
                         <i class="fas fa-user-graduate"></i>
                     </div>
                     <div class="choose-teacher-text">
-                        <h5 class="mt-1 mb-2">Student Account</h5>
+                        <h5 class="mt-1 mb-2">Log In For An Student Account</h5>
                         <p>For students, class participants, club members, etc ...</p>
                     </div>
                 </div>    
@@ -58,7 +58,7 @@
         </div>
         <hr class="bg-light">
         <div class="log-in">
-            <span>Already have an account?</span> <a href="./login.php" class="text-decoration-none a-text">Log in</a>
+            <span>Don't have an account?</span> <a href="./signup.php" class="text-decoration-none a-text">Sign Up</a>
         </div>
     </div>
 </main>

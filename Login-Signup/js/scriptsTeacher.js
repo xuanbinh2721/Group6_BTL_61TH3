@@ -4,6 +4,11 @@ $(document).ready(function(){
         if(userlPattern.test($(this).val()) == false){
             $("#userNotification").text("Username không hợp lệ").css("color","red");
             $("#Signup").prop( "disabled", true );
+            $("#email").prop( "disabled", true );
+            $("#pwd").prop( "disabled", true );
+            $("#cpwd").prop( "disabled", true );
+            $(this).focus();
+
         }
         else{
             $.ajax({
@@ -14,6 +19,9 @@ $(document).ready(function(){
                 success:function(res){
                     $("#userNotification").text(res).css("color","green");
                     $("#Signup").prop( "disabled", false );
+                    $("#email").prop( "disabled", false );
+                    $("#pwd").prop( "disabled", false );
+                    $("#cpwd").prop( "disabled", false );
                 }
 
             })
@@ -27,6 +35,11 @@ $(document).ready(function(){
         if(emailPattern.test($(this).val())== false){
             $("#emailNotification").text("Email không hợp lệ").css("color","red");
             $("#Signup").prop( "disabled", true );
+            $("#username").prop( "disabled", true );
+            $("#pwd").prop( "disabled", true );
+            $("#cpwd").prop( "disabled", true );
+            $(this).focus();
+
         }
         else{
             $.ajax({
@@ -37,6 +50,9 @@ $(document).ready(function(){
                 success:function(res){
                     $("#emailNotification").text(res).css("color","green");
                     $("#Signup").prop( "disabled", false );
+                    $("#username").prop( "disabled", false );
+                    $("#pwd").prop( "disabled", false );
+                    $("#cpwd").prop( "disabled", false );
                 }
 
             })

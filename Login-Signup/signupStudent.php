@@ -29,8 +29,9 @@
             <div class="h3 text-center text-black">Sign up</div>
             <div class="d-flex align-items-center input-field my-3"> 
               <span class="fas fa-school p-2"></span> 
-              <input type="text" placeholder="ID Class" required class="form-control" id="idClass" name="idClass"> 
+              <input type="text" placeholder="ID Class" required class="form-control" id="idClass" name="class">  
             </div>
+            <small id="classNotification"></small>
             <div class="d-flex align-items-center input-field my-3"> 
               <span class="fa fa-user p-2"></span> 
               <input type="text" placeholder="Username" required class="form-control" id="username" name="name"> 

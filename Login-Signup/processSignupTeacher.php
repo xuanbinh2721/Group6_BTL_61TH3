@@ -9,6 +9,7 @@ else{
     $pass = $_POST['pass'];
     $user= htmlspecialchars($user);
     $email = htmlspecialchars($email);  
+    $pass= htmlspecialchars($pass);
     require '../config/dbconfig.php';
     $sql1 = "SELECT * FROM usersteacher WHERE name='$user' OR email='$email'";
     $result1 = mysqli_query($conn,$sql1);
@@ -16,7 +17,6 @@ else{
         $error = "Username hoặc Email đã tồn tại";
         header("location: signupTeacher.php?error=$error");
     }
-    
     else{
         $token = md5($_POST['email']).rand(10,9999);
         $pass_hash=password_hash($pass,PASSWORD_DEFAULT);

@@ -4,13 +4,14 @@ if( !isset($_POST['btnSignUp']) ){
     header("location: signupStudent.php");
 }
 else{
-    $idclass = $_POST['idClass'];
+    $idclass = $_POST['class'];
     $user = $_POST['name'];
     $email = $_POST['email'];
     $pass = $_POST['pass'];
     $user= htmlspecialchars($user);
     $email = htmlspecialchars($email); 
     $idclass = htmlspecialchars($idclass); 
+    $pass= htmlspecialchars($pass);
     require '../config/dbconfig.php';
     $sql1 = "SELECT * FROM usersstudent WHERE name='$user' OR email='$email'";
     $sql2 = "SELECT * FROM class where idclass='$idclass'";
