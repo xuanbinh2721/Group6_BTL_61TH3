@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="../css/login.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./js/scripts.js"></script>
+    <script src="./js/scriptsLogin.js"></script>
 </head>
 <body>
 <header class="header-navbar container-fluid fixed-top">
@@ -27,25 +31,27 @@
     <div class="card">
         <form action="./processLoginTeacher.php" class="d-flex flex-column" method ="post">
             <div class="h3 text-center text-black">Login</div>
-            <div class="d-flex align-items-center input-field my-3 mb-4"> 
+            <div class="d-flex align-items-center input-field my-3 "> 
                 <span class="fa fa-user p-2"></span> 
                 <input type="text" placeholder="Username or Email" required class="form-control" id="user" name="user"> 
             </div>
+            <small id="userNotification" class ="mb-4"></small>
             <div class="d-flex align-items-center input-field mb-4">
                 <span class="fas fa-lock p-2"></span> 
                 <input type="password" placeholder="Password" required class="form-control" id="pwd" name="pass">  
             </div>
             <div class="my-3"> 
-                <input type="submit" value="Login" class="btn btn-primary" name= "btnLogIn"> 
+                <input type="submit" value="Login" class="btn btn-primary" name= "btnLogIn" id="btnLogIn"> 
             </div>
             <div class="mb-3"> <span class="text-light-white">Don't have an account?</span> 
                 <a href="./signup.php">Sign Up</a> 
             </div>
             <small>
             <?php
-                    if(isset($_GET['error'])){
-                        echo "<p style='color:red'> {$_GET['error']} </p>";
-                    }
+                require '../config/session.php';
+                if(isset($_GET['error'])){
+                    echo "<p style='color:red'> {$_GET['error']} </p>";
+                }
             ?>
             </small>
         </form>

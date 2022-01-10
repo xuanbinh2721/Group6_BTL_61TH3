@@ -1,42 +1,55 @@
 <?php
+require_once '../config/dbconfig.php';
+if(empty($_POST['user']) || empty($_POST['pass'])) {
+    $_SESSION['error'] = 'Bạn cần điền đầy đủ thông tin!';
+    header('location:loginTeacher.php');
+    exit();
+}
+$user = $_POST['user'];
+$password = htmlspecialchars($_POST['pass'], ENT_QUOTES);
+$email = $user;
 
-if(isset($_POST['btnLogin'])){
-    $user =$_POST['user'];
-    $pass= $_POST['pass'];
-    $email = $user;
-    $user=htmlspecialchars($user);
-    $pass=htmlspecialchars($pass);
-    require "../config/dbconfig.php";
-    $sql= "SELECT * FROM usersteacher WHERE email = ? OR name = ? AND status = 1";
-    $stmt = mysqli_prepare($conn,$sql);
-        mysqli_stmt_bind_param($stmt,"ss",$email,$user);
 
-        if(mysqli_stmt_execute($stmt)){
-            mysqli_stmt_bind_result($stmt,$idteacher,$nameteacher,$emailteacher,$passTeacher,$statusTeacher,$emailverificationlinkTeacher,$emailverifiedatTeacher);
-            if(mysqli_stmt_fetch($stmt)){
-                if(password_verify($pass,$matkhauTeacher)){
-                    // CẤP THẺ LÀM VIỆC
-                    $_SESSION['isLoginOK'] = $email;
-                    header("location: ../index.html"); //Chuyển hướng về Trang quản trị
-                }
-                else{
-                    $error = "Bạn nhập Mật khẩu không chính xác";
-                    header("location: loginTeacher.php?error=$error"); //Chuyển hướng, hiển thị thông báo lỗi
+$sql = "SELECT * from usersteacher where email = ? or name = ?";
+
+$stmt = mysqli_prepare($conn, $sql);
+
+if($stmt){
+    // Liên kết biến với tham số trong câu lệnh đã chuẩn bị
+    mysqli_stmt_bind_param($stmt, "ss", $user, $email);
+    
+    if(mysqli_stmt_execute($stmt)) {
+        mysqli_stmt_store_result($stmt);
+        if(mysqli_stmt_num_rows($stmt) == 1) {
+            mysqli_stmt_bind_result($stmt, $tchdId, $tchdName,  $tchdEmail, $tchPassword,  $status,$token, $tokenVerification);
+            if(mysqli_stmt_fetch($stmt)) {
+                if($status == 1) {
+                    if(password_verify($password, $tchPassword)) {
+                        $_SESSION['id'] = $tchId;
+                        $_SESSION['name'] = $tchName;
+                        $_SESSION['email'] = $tchEmail;
+                    } else{
+                        $_SESSION['error'] = 'Sai mật khẩu ';
+                        header('location:loginTeacher.php');
+                        exit();
+                    }
+                
+                } else {
+                    $_SESSION['error'] = 'Vui lòng xác thực email';
                 }
             }
-            
+        } else {
+            $_SESSION['error'] = 'Hãy kiểm tra lại email và mật khẩu của bạn!';
         }
-        else{
-            $error = "Bạn nhập thông tin Email không tồn tại";
-            header("location: loginTeacher.php?error=$error"); //Chuyển hướng, hiển thị thông báo lỗi
-        }
+    }
 
-        mysqli_close($conn);
+} else{
+    $_SESSION['error'] = 'Không thể kết nối đến hệ thống';
 }
-else{
-    header("location:loginTeacher.php");
-}
+ 
+// Đóng câu lệnh
+mysqli_stmt_close($stmt);
 
+mysqli_close($conn);
 
-
-?>
+header('location:loginTeacher.php');

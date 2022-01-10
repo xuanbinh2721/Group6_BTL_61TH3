@@ -23,13 +23,13 @@
     </nav>
 </header>
 <main class="container-fluid signupOption">
-    <div class="page-content">           
-        <a href="../index.php" class="text-decoration-none btnBack">
+    <div class="page-content ">           
+        <a href="../index.php" class="text-decoration-none btnBack ">
             <i class="fas fa-angle-left"></i> 
             <span>Back</span>
         </a>
-        <h3 class="">Choose an account to login</h3>
-        <div class="user-options">
+        <h3 class="mb-5">Choose an account to login</h3>
+        <div class="user-options mb-4">
             <a href="./loginTeacher.php" class="btn  btn-choose"> 
                 <div class="choose-teacher">
                     <div class="choose-teacher-img">
