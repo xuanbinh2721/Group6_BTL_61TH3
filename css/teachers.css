@@ -78,6 +78,7 @@
   font-size: 23px;
   margin-top: 20px;
 }
+
 #scrollTop {
   position: fixed;
   bottom: -56px;
@@ -94,5 +95,148 @@
 }
 #scrollTop:hover {
     color: white;
+}
+
+@media (max-width: 740px) {
+  .learnmore-1-1{
+    margin-top: -25px;
+    margin-left: 20px;
+  }
+  .intro h3 {
+    font-size: 26px;
+    margin-left: 70px;
+    margin-top: 20px;
+  }
+  .intro p{
+    margin-left: 60px;
+    margin-right: -80px;
+    margin-top: -10px;
+    font-size: 20px;
+  }
+  .btn-create{
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-left: 90px;
+    margin-bottom: 30px;
+  }
+  .btn-contact{
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+  }
+  .intro_1 h3{
+    font-size: 26px;
+    margin-left: 40px;
+    margin-right: -20px;
+    margin-top: -5px;
+  }
+  .intro_1 p{
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: -2px;
+    margin-top: -30px
+  }
+  .intro_1 span {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  .learnmore-1-2, .learnmore-1-3 {
+    margin-left: 20px;
+  }
+  .intro_2 h3{
+    font-size: 26px;
+    margin-left: 15px;
+    margin-right: -50px;
+    margin-top: 20px;
+  }
+  .intro_2 p, .intro_3 p{
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: -40px;
+    margin-top: -30px;
+  }
+  .intro_2 span, .intro_3 span{
+    margin-left: 40px;
+    font-size: 20px;
+  }
+  .intro_3 h3{
+    font-size: 26px;
+    margin-left: 23px;
+    margin-right: -99px;
+    margin-top: 10px;
+  }
+  .learnmore-1-4{
+    margin-left: 40px;
+  }
+  .formsubmit{
+    margin-left: 33px;
+  }
+  #scrollTop{
+    display: none;
+  }
+  
+}
+@media (min-width: 741px) and (max-width:1023px) {
+  .intro h3{
+    font-size: 28px;
+    margin-top: 65px;
+  }
+  .intro p{
+    font-size: 20px;
+    margin-top: -30px;
+  }
+  .btn-create{
+    font-size: 20px;
+    padding: 5px 20px;
+    margin-top: -15px;
+  }
+  .btn-contact{
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 5px 20px;
+    margin-left: 70px;
+  }
+  .intro_1 h3{
+    font-size: 26px;
+    margin-left: 40px;
+    margin-right: -10px;
+    margin-top: 50px
+  }
+  .learnmore-1-2{
+    margin-left: -35px;
+  }
+  .intro_1 p{
+    margin: -50px 10px 0px 40px;
+    font-size: 20px;
+  }
+  .intro_1 span, .intro_3 span{
+    font-size: 20px;
+    margin-left: 40px;
+  }
+  .intro_2 h3{
+    font-size: 26px;
+    margin-top: 35px;
+    margin-left: -15px;
+  }
+  .intro_2 p{
+    font-size: 20px;
+    margin: -50px 30px 0px -2px;
+  }
+  .intro_2 span{
+    font-size: 20px;
+    margin-left: 0px
+  }
+  .intro_3 h3{
+    font-size: 26px;
+    margin: 35px 0px 0px 40px;
+  }
+  .intro_3 p{
+    font-size: 20px;
+    margin: 0px 10px 0px 40px;
+  }
+  #scrollTop{
+    display: none;
+  }
 }
  
