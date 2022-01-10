@@ -1,17 +1,22 @@
  /* CSS for main */
+  .intro1{
+    margin-top: 20px;
+    padding-right: 50px;
+  }
   .intro1 h3{
     color: #1b1e83;
     font-family: Vulf Sans Light;
-    font-size: 60px;
-    line-height: 50px;
-    margin: 150px 50px 22px;
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 64px 48px;
   }
   .intro1 p{
     color: #4e5565;
     font-family: Disclaimer Medium;
-    font-size: 30px;
+    font-size: 23px;
     line-height: 33px;
     margin: 0px 0px 22px;
+    text-align: justify;
   }
   .intro1 p{
     margin-left: 50px;
@@ -21,26 +26,34 @@
     margin-left: 25%;
   }
   .container-dlt{
-    padding: 150px ;
+    padding: 100px ;
     background-color: white;
     margin-left: 120px;
     margin-right: 120px;
     padding-bottom: 0px !important;
   }
-  .container-dlt h3, .span-text,.link-text{
+  .container-dlt h3{
     font-family:Vulf Sans Light;
     line-height: 40px;
     font-size: 36px;
     color: #4e5565;
+    margin-bottom: 20px;
   }
+  .span-text{
+    font-family:Vulf Sans Light;
+    line-height: 36px;
+    font-size: 24px;
+  }
+
   .link-text{
-    color: #ff6f00 !important;
+    color: #ff6f00;
+    font-size: 24px;
   }
   .intro2 h2{
     font-family:Vulf Sans Light;
     color: #19237e;
     display: inline;
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 50px;
   }
@@ -48,52 +61,67 @@
   .intro2 p,.intro2-1{
     color: #333333;
     font-family:Vulf Sans Light;
-    font-size: 25px;
+    font-size: 20px;
   }
  .link-text1{
     font-family:Vulf Sans Light;
-    font-size: 25px;
+    font-size: 18px;
     color: #ff6f00;
+    cursor: pointer;
  }
  .blog{
   font-family:Vulf Sans Light;
   color: #19237e;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 35px;
   font-weight: 500;
  }
  .blog-1{
   color: #333333;
   font-family:Vulf Sans Light;
-  font-size: 26px;
+  font-size: 20px;
 }
  .cont-1{
    text-align: center;
+   font-size: 36px;
+   margin-bottom: 10px !important;
  }
  .cont-2{
    text-align: center;
-   font-size: 30px;
+   font-size: 23px;
    color: #4e5565;
  }
  .card-text1{
   font-family:Vulf Sans Light;
   color: #333333;
-  font-size: 28px;
+  font-size: 24px;
+  text-align: left;
+ }
+ .intro3{
+  padding: 30px 55px 20px 30px !important;
+   margin: 32px 0px;
+   background-color: #fff;
+   border: 1px solid #c9ccd3 ;
+   border-radius: 12px;
+   box-shadow: 4px 10px 12px #ccc;
  }
  .intro3 h3{
   color: #4e5565;
-  font-size: 32px;
+  font-size: 23px;
   line-height: 35px;
   margin-bottom: 5%;
  }
  .intro3 a{
    display: block;
-   font-size: 28px;
+   font-size: 23px;
    color: #ff6f00;
-   line-height: 35px;
-   margin-bottom: 10%;
+   /* line-height: 35px; */
+   margin-bottom: 20px;
    text-decoration: none;
  }
+  .intro3 a:hover{
+    text-decoration: underline ;
+  }
  #scrollTop {
   position: fixed;
   bottom: -56px;
@@ -111,4 +139,63 @@
 #scrollTop:hover {
     color: white;
 }
- 
+.bgg-image{
+  display: flex;
+  padding: 10px 90px;
+}
+.container h3{
+  font-size: 30px;
+}
+@media (max-width: 740px){
+  .bgg-image{
+    padding-left: 0px !important; 
+    flex-direction: column;
+    padding-right: 20px
+  }
+  .intro1 h3{
+    font-size: 32px;
+    margin-right: 0px;
+    margin-left: 18px;
+  }
+  .container-dlt{
+    margin-left: 0px;
+    padding: 10px 5px;
+    margin-right: 0px;
+  }
+  .span-text{
+
+  }
+  .card{
+    margin-bottom: 10px !important;
+  }
+  .intro1{
+    padding-right: 0px;
+  }
+  .intro1 p {
+    margin: 0px 18px 16px 40px ;
+    text-align: justify;
+  }
+  .intro1 h3{
+  
+  }
+  .intro3{
+    margin-left: 20px;
+  }
+}
+@media (min-width:741px) and (max-width: 1023px) {
+  .container-dlt{
+    padding: 20px 30px;
+  }
+  .card-text1{
+    font-size:18px !important;
+  }
+  .cont-1{
+    margin-top: 20px;
+  }
+  .cont-2{
+    margin-bottom: 0px;
+  }
+  .intro3{
+    padding: 36px 8px 12px 20px
+  }
+}
