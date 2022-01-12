@@ -14,7 +14,7 @@ else{
     $sql1 = "SELECT * FROM usersteacher WHERE name='$user' OR email='$email'";
     $result1 = mysqli_query($conn,$sql1);
     if(mysqli_num_rows($result1) > 0){
-        $error = "Username hoặc Email đã tồn tại";
+        $_SESSION['error'] = "Username hoặc Email đã tồn tại";
         header("location: signupTeacher.php?error=$error");
     }
     else{
@@ -33,7 +33,7 @@ else{
             }
         }
         else{
-            $error = "Có lỗi vui lòng nhập lại thông tin";
+            $_SESSION['error'] = "Có lỗi vui lòng nhập lại thông tin";
             header("location: signupTeacher.php?error=$error"); //Chuyển hướng, hiển thị thông báo lỗi
     }
             

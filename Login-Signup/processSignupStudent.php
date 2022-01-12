@@ -18,12 +18,12 @@ else{
     $result1 = mysqli_query($conn,$sql1);
     $result2 = mysqli_query($conn,$sql2);
     if(mysqli_num_rows($result1) > 0){
-        $error = "Username hoặc Email đã tồn tại";
+        $_SESSION['error'] = "Username hoặc Email đã tồn tại";
         header("location: signupStudent.php?error=$error");
     }
     
     else if(mysqli_num_rows($result2) <0){
-            $error = "ID Class không tồn tại";
+            $_SESSION['error'] = "ID Class không tồn tại";
             header("location: signupStudent.php?error=$error");
         }
         else{
@@ -42,7 +42,7 @@ else{
             }
         }
         else{
-            $error = "ID Class không tồn tại";
+            $_SESSION['error'] = "ID Class không tồn tại";
             header("location: signupStudent.php?error=$error"); //Chuyển hướng, hiển thị thông báo lỗi
     }
             

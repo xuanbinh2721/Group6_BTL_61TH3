@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,10 +56,7 @@
             <p id="message"></p>
             <small>
             <?php
-                    if(isset($_GET['error'])){
-                        echo "<p style='color:red'> {$_GET['error']} </p>";
-                    }
-
+                require '../config/session.php';
             ?>
             </small>
             <div class="my-3"> <input type="submit" value="Sign up" class="btn btn-primary" name="btnSignUp" id='Signup' disable> </div>

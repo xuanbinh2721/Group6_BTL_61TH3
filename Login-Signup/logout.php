@@ -1,9 +1,9 @@
 <?php
     session_start();
 
-    if(isset($_SESSION['isLoginOK'])){
-        unset($_SESSION['isLoginOK']);
-        header("location:login.php");
+    if(isset($_SESSION['id'])){
+        unset($_SESSION['id']);
+        header("location: ../index.php");
     }
 
 ?>

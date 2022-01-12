@@ -36,7 +36,7 @@ if($_GET['key'] && $_GET['token'])
 }
 else
 {
-$msg = "Danger! Your something goes to wrong.";
+    header('location: signupTeacher.php');
 }
 ?>
     <div class="container mt-3">
@@ -48,6 +48,7 @@ $msg = "Danger! Your something goes to wrong.";
                 <p>
                     <?php echo $msg; ?>
                 </p>
+                <a href="./loginTeacher.php">Go To Log In</a>
             </div>
         </div>
     </div>
