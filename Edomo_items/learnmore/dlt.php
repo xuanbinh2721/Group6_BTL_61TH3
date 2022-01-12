@@ -77,11 +77,11 @@
     
 
   <main>
-        <div class="bgg-image pt-5 pb-5 ps-5 pe-0 shadow-1-strong rounded row"
-            style="background-image: url('../../img/learnmore-bg-5-1.png'); width: calc(99% +28px)">
+        <div class="bgg-image pt-5 pb-5 pe-0 shadow-1-strong rounded d-flex"
+            style="background-image: url('../../img/learnmore-bg-5-1.png')">
             <div class="col-md-6 intro1">
                 <h3 class="mb-3 h2">Distance Learning Toolkit</h3>
-                <p>As school communities go back to school or continue learning online due to COVID-19, we want to help teachers, parents, and students feel connected and learn together. Here are practical tools and resources for learning at a distance, in person, or anywhere in between.</p>
+                <p>  As school communities go back to school or continue learning online due to COVID-19, we want to help teachers, parents, and students feel connected and learn together. Here are practical tools and resources for learning at a distance, in person, or anywhere in between.</p>
             </div>
             <div class="col-md-6">
                 <img src="../../img/learnore-5-1.png" alt="" class ="img-fluid learnmore-5-1">
@@ -90,8 +90,9 @@
         <div class="container-fluid bg-light">
             <div class="container-dlt">
                 <h3>Back to School 2020 Guide</h3>
-                <span class = "span-text">Teaching in person, online, or somewhere in the middle? Here’s how you can use Edmodo to keep your students engaged, no matter where they are.</span>
-                <span class = "link-text">New to Edmodo? Start here.</span>
+                <span class = "span-text">Teaching in person, online, or somewhere in the middle? Here’s how you can use Edmodo to keep your students engaged, no matter where they are.
+                  <a class = "link-text text-decoration-none" href="">New to Edmodo? Start here.</a>
+                </span>
                 <div class="row">
                     <img src="../../img/learnmore-5-2.png" alt="" class= "mt-5 mb-5">
                 </div>
@@ -143,7 +144,7 @@
                       <div class="card-body">
                         <h5 class="card-title blog">Blog: Three Strategies to Use Edmodo for Efective Communication</h5>
                         <p class="card-text blog-1">Learn how to easily communicate with students and parents at any time and create a space discussion.</p>
-                        <Span class = "link-text1">Read</Span> <span class = "link-text1"><i class="bi bi-caret-right"></i></span>
+                        <Span class = "link-text1">Read</Span><span class = "link-text1"><i class="bi bi-caret-right"></i></span>
                       </div>
                     </div>
                   </div>
@@ -260,34 +261,25 @@
               </div>
               <img src="../../img/learnmore-5-15.png" class="card-img-top" alt="..." class ="img-fluid">
             </div></div>
-          </div>
-          <div class="row card-group">
-            <div class="col-md-4 mt-5 ">
-              <div class=" card h-100">
-                <div class="card-body">
-                  <p class="card-text1">Edmodo Webinar: How Teachers and Parents Can Work Together</p>
-                </div>
-                <img src="../../img/learnmore-5-16.png" class="card-img-top" alt="..." class = "img-fluid">
-              </div>
-            </div>
-          </div>
-
-
+          </div>    
          </div>
         </div>
 
         <div
-            class="bgg-image pt-5 ps-5 pe-0 pb-5 shadow-1-strong rounded row mt-5 mb-5"
-            style="background-image: url('../../img/learnmore-bg-5-2.png'); width: calc(99% +28px);">
+            class="bgg-image shadow-1-strong rounded"
+            style="background-image: url('../../img/learnmore-bg-5-2.png');">
             <div class="col-md-6 intro1">
-                <h3 class="mb-3 h2">Need an Edmodo Account? Start here.</h3>
+                <h3 class="mb-3 h2">Need an Edmodo Account? <br> Start here.</h3>
                 <p>Here are some quick tips and information to help you quickly set up your Edmodo account.</p>
             </div>
             <div class="col-md-6 intro3">
              <div class="container">
               <h3>Quick Links:</h3>
               <a href="">Account Types on Edmodo</a>
-              <a href="">Sign up as a teacher. Sign up as a student.</a>
+              <span>
+                <a href="">Sign up as a teacher.</a>
+                <a href="">Sign up as a student.</a>
+              </span>
               <a href="">Getting Started on Edmodo</a>
              </div>
             </div>
@@ -391,8 +383,8 @@
           </ul>
         </div>
         <div class="col-sm-2">
-          <h6 class="ps-2 mb-3 lead">Resources</h6>
-          <ul class="ps-2 list-inf list-unstyled">
+          <h6 class="mb-3 lead">Resources</h6>
+          <ul class="list-inf list-unstyled">
             <li>
               <a href="../blog.php" class="text-decoration-none">Blog</a>
             </li>

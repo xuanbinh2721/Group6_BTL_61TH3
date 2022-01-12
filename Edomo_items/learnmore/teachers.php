@@ -77,14 +77,14 @@
   <main class="container-fluid">
     <div class="row">
       <div class="col-md-6">
-          <img src="../../img/learnmore-1-1.png" alt="" class ="img-fluid pt-5 ps-4">
+          <img src="../../img/learnmore-1-1.png" alt="" class ="img-fluid pt-5 ps-4 learnmore-1-1">
       </div>
 
       <div class="col-md-6 intro ">
           <h3>All your tools in one place</h3>
           <p class = " pe-5">Simplify communication and improve student engagement in your classroom and beyond.</p>
-          <button class = "btn-create-account-teacher bg-warning">Create a Teacher Account</button>
-          <button class = "btn-contact-us bg-warning">Contact Us</button>
+          <button class = "btn-create-account-teacher bg-warning btn-create">Create a Teacher Account</button>
+          <button class = "btn-contact-us bg-warning btn-contact">Contact Us</button>
       </div>
     </div>
 
@@ -96,13 +96,13 @@
       </div>
 
       <div class="col-md-6">
-        <img src="../../img/learnmore-1-2.png" alt="" class = "img-fluid pt-5 ps-4">
+        <img src="../../img/learnmore-1-2.png" alt="" class = "img-fluid pt-5 ps-4 learnmore-1-2">
       </div>
     </div>
 
     <div class="row">
       <div class="col-md-6">
-      <img src="../../img/learnmore-1-3.png" alt="" class = "img-fluid pt-5 ps-4">
+      <img src="../../img/learnmore-1-3.png" alt="" class = "img-fluid pt-5 ps-4 learnmore-1-3">
     </div>
 
     <div class="col-md-6 intro_2">
@@ -118,11 +118,11 @@
         <span>Get started for free</span> 
       </div>
       <div class="col-md-6">
-        <img src="../../img/learnmore-1-4.png" alt="" class ="img-fluid">
+        <img src="../../img/learnmore-1-4.png" alt="" class ="img-fluid learnmore-1-4">
       </div>
     </div>
 
-    <div class="row submit bg-light">
+    <div class=" submit bg-light formsubmit">
       <h3>Stay in Touch!</h3>
       <p>Sign up to receive the latest Edmodo news and community insights.</p>
       <form>
@@ -159,13 +159,13 @@
           </div>
         </div>
       </form>
+
       <form class="form-inline">
         <div class="col-md-12 mb-3">
           <label for="validationDefault02">Additional Comments</label>
           <p>Please tell us any addition information about you to help us provide better assistace.</p>
           <input type="text" class="form-control p-5" id="validationDefault02" placeholder="" value="" required>
         </div>
-      
         <div class="custom-control custom-checkbox my-1 mr-sm-2">
           <lable>Edmodo is committed to protecting and respecting your privacy, and we’ll only use your personal information to administer your account and to provide the products and services you requested from us. From time to time, we would like to contact you about our products and services, as well as other content that may be of interest to you. If you consent to us contacting you for this purpose, please tick below to say how you would like us to contact you:</lable>
           <br><br><input type="checkbox" class="custom-control-input" id="customControlInline">
@@ -173,16 +173,14 @@
           <br><br><lable>You can unsubscribe from these communications at any time. For more information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our Privacy Policy.</lable>
           <br><br><lable>By clicking submit below, you consent to allow Edmodo to store and process the personal information submitted above to provide you the content requested.</lable>
         </div>
-      
-        <button type="submit" class="btn bg-warning ps-5 pe-5 pt-3 pb-3 mt-3 ">Submit</button>            
+        <button type="submit" class="btn bg-warning ps-5 pe-5 pt-3 pb-3 mt-3">Submit</button>            
       </form>
     </div>
-    <!-- <a href="#" id="scrollTop"><i class="bi bi-caret-up-fill "></i></a>    -->
+      <a href="#" id="scrollTop" style = "width: 3.5% !important"><i class="bi bi-caret-up-fill "></i></a> 
   </main>
   <hr>
   <script>
   window.onscroll = function() {scrollFunction()};
-
     scrollFunction = () => {
         if(document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
             document.querySelector('#scrollTop').style.bottom = '0';
@@ -226,7 +224,6 @@
             <option value="3">English1 (UK)</option>
             <option value="3">English2 (UK)</option>
             <option value="3">English3 (UK)</option>
-
           </select>
         </div>
 
