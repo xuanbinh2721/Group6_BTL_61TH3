@@ -83,8 +83,8 @@
       <div class="col-md-6 intro ">
           <h3>All your tools in one place</h3>
           <p class = " pe-5">Simplify communication and improve student engagement in your classroom and beyond.</p>
-          <button class = "btn-create-account-teacher bg-warning btn-create">Create a Teacher Account</button>
-          <button class = "btn-contact-us bg-warning btn-contact">Contact Us</button>
+          <a class = "btn-create-account-teacher bg-warning btn-create text-decoration-none" href ="../../Login-Signup/signupTeacher.php">Create a Teacher Account</a>
+          <a class = "btn-contact-us bg-warning btn-contact text-decoration-none">Contact Us</a>
       </div>
     </div>
 
@@ -122,8 +122,8 @@
       </div>
     </div>
 
-    <div class=" submit bg-light formsubmit">
-      <h3>Stay in Touch!</h3>
+    <div class=" submit bg-light formsubmit mt-4">
+      <h3 class="mt-4">Stay in Touch!</h3>
       <p>Sign up to receive the latest Edmodo news and community insights.</p>
       <form>
         <div class="row">
@@ -173,7 +173,7 @@
           <br><br><lable>You can unsubscribe from these communications at any time. For more information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our Privacy Policy.</lable>
           <br><br><lable>By clicking submit below, you consent to allow Edmodo to store and process the personal information submitted above to provide you the content requested.</lable>
         </div>
-        <button type="submit" class="btn bg-warning ps-5 pe-5 pt-3 pb-3 mt-3">Submit</button>            
+        <button type="submit" class="btn bg-warning ps-5 pe-5 pt-3 pb-3 mt-3 mb-4">Submit</button>            
       </form>
     </div>
       <a href="#" id="scrollTop" style = "width: 3.5% !important"><i class="bi bi-caret-up-fill "></i></a> 

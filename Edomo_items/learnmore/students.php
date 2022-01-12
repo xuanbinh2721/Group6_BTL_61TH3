@@ -82,7 +82,9 @@
         <div class="col-md-6 intro1">
           <h3>Your best work starts here</h3>
           <p>Stay updated. Stay organized. See yourself grow.</p>
-          <button class ="btn bg-warning btn-learnmore-2">Create a Student Account</button>
+          <button class ="btn bg-warning btn-learnmore-2 text-decoration-none" >
+            <a href="../../Login-Signup/signupStudent.php" class="text-decoration-none text-dark">Create a Student Account</a>
+          </button>
         </div>
       </div>
     
