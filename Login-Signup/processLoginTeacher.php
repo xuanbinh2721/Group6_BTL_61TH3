@@ -5,9 +5,10 @@ if(empty($_POST['user']) || empty($_POST['pass'])) {
     header('location:loginTeacher.php');
     exit();
 }
-$user = $_POST['user'];
+$user =  htmlspecialchars($_POST['user']);
 $password = htmlspecialchars($_POST['pass'], ENT_QUOTES);
 $email = $user;
+$email= htmlspecialchars($email);
 
 
 $sql = "SELECT * from usersteacher where email = ? or name = ?";

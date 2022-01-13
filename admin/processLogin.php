@@ -2,47 +2,71 @@
 require_once '../config/dbconfig.php';
 if(empty($_POST['user']) || empty($_POST['pass'])) {
     $_SESSION['error'] = 'Bạn cần điền đầy đủ thông tin!';
-    header('location:loginTeacher.php');
+    header('location:login.php');
     exit();
 }
-$user = $_POST['user'];
+$user = htmlspecialchars($_POST['user']);
 $password = htmlspecialchars($_POST['pass'], ENT_QUOTES);
 
 
 
-$sql = "SELECT * from admin where  username = ?";
+$sql = "SELECT * from admin where  username = '$user'";
 
-$stmt = mysqli_prepare($conn, $sql);
-
-if($stmt){
-    // Liên kết biến với tham số trong câu lệnh đã chuẩn bị
-    mysqli_stmt_bind_param($stmt, "s", $user);
-    
-    if(mysqli_stmt_execute($stmt)) {
-        mysqli_stmt_store_result($stmt);
-        if(mysqli_stmt_num_rows($stmt) == 1) {
-            mysqli_stmt_bind_result($stmt, $adId, $adName,  $adUsername, $adPassword);
-            if(mysqli_stmt_fetch($stmt)) {   
-                if(password_verify($password, $adPassword)) {
-                    $_SESSION['id'] = $adId;
-                    $_SESSION['user'] = $adUsername;
-                } else{
-                    $_SESSION['error'] = 'Sai mật khẩu ';
-                    header('location:login.php');
-                    exit();
-                }
-            }
-        } else {
-            $_SESSION['error'] = 'Hãy kiểm tra lại username và mật khẩu của bạn!';
-        }
+$result = mysqli_query($conn, $sql);
+if(mysqli_num_rows($result) == 1){
+    $row = mysqli_fetch_array($result);
+    $password_hash = password_hash($row['password'],PASSWORD_DEFAULT);
+    if(password_verify($password,$password_hash)){
+        $_SESSION['id']=$row['id'];
+        header('location:index.php');
+        exit();
     }
-
-} else{
-    $_SESSION['error'] = 'Không thể kết nối đến hệ thống';
+    else{
+        $_SESSION['error'] = 'Sai mật khẩu ';
+        header('location:login.php');
+        exit();
+    }
 }
+else{
+    $_SESSION['error'] = 'Vui lòng kiểm tra lại tài khoản ';
+}
+
+// $sql = "SELECT * from admin where  username = ?";
+// $stmt = mysqli_prepare($conn,$sql);
+// if($stmt){
+//     // Liên kết biến với tham số trong câu lệnh đã chuẩn bị
+//     mysqli_stmt_bind_param($stmt, "s", $user);
+    
+//     if(mysqli_stmt_execute($stmt)) {
+//         mysqli_stmt_store_result($stmt);
+//         if(mysqli_stmt_num_rows($stmt) == 1) {
+//             mysqli_stmt_bind_result($stmt, $adId, $adName,$adUsername,$adPassword);
+//             $password_hash = password_hash($adPassword,PASSWORD_DEFAULT);
+//             if(mysqli_stmt_fetch($stmt)) {   
+//                 if(password_verify($password, $password_hash)) {
+//                     $_SESSION['id'] = $adId;
+//                     $_SESSION['user'] = $adUsername;
+//                     header('location:index.php');
+//                     exit();
+//                 } 
+//                 else{
+//                     $_SESSION['error'] = 'Sai mật khẩu ';
+//                     header('location:login.php');
+//                     exit();
+//                 }
+//             }
+//         } 
+//         else {
+//             $_SESSION['error'] = 'Hãy kiểm tra lại username và password của bạn!';
+//         }
+//     }
+
+// } else{
+//     $_SESSION['error'] = 'Không thể kết nối đến hệ thống';
+// }
  
-// Đóng câu lệnh
-mysqli_stmt_close($stmt);
+// // Đóng câu lệnh
+// mysqli_stmt_close($stmt);
 
 mysqli_close($conn);
 

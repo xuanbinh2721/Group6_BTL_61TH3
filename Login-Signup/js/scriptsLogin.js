@@ -9,6 +9,7 @@ $(document).ready(function(){
             $(this).focus();
         }
         else{
+            $("#userNotification").text("");
             $("#pwd").prop( "disabled", false );
             $("#btnLogIn").prop( "disabled", false);
         }
