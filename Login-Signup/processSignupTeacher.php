@@ -15,14 +15,14 @@ else{
     $result1 = mysqli_query($conn,$sql1);
     if(mysqli_num_rows($result1) > 0){
         $_SESSION['error'] = "Username hoặc Email đã tồn tại";
-        header("location: signupTeacher.php?error=$error");
+        header("location: signupTeacher.php");
     }
     else{
         $token = md5($_POST['email']).rand(10,9999);
         $pass_hash=password_hash($pass,PASSWORD_DEFAULT);
         $sql2 = "INSERT INTO usersteacher (name, email, email_verification_link ,password) VALUES('$user', '$email', '$token', '$pass_hash')";
         $result2 = mysqli_query($conn,$sql2);
-        $link = "<a href='http://localhost/Group6_BTL_61TH3/Login-Signup/verifyMailTeacher.php?key=".$email."&token=".$token."'>Click and Verify Email</a>";
+        $link = "<a href='http://localhost/Group6_BTL_61TH3/Login-Signup/verifyMailTeacher.php?key=".$email."&token=".$token."'>Verify Email</a>";
         if($result2 == true){
             require "./send-mail.php";
             if(sendEmailForAccountActive($email,$link)){
@@ -34,7 +34,7 @@ else{
         }
         else{
             $_SESSION['error'] = "Có lỗi vui lòng nhập lại thông tin";
-            header("location: signupTeacher.php?error=$error"); //Chuyển hướng, hiển thị thông báo lỗi
+            header("location: signupTeacher.php"); //Chuyển hướng, hiển thị thông báo lỗi
     }
             
     

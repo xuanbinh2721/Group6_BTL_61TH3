@@ -8,27 +8,24 @@ if(empty($_POST['user']) || empty($_POST['pass'])) {
 $user = htmlspecialchars($_POST['user']);
 $password = htmlspecialchars($_POST['pass'], ENT_QUOTES);
 
-
-
 $sql = "SELECT * from admin where  username = '$user'";
 
 $result = mysqli_query($conn, $sql);
 if(mysqli_num_rows($result) == 1){
     $row = mysqli_fetch_array($result);
-    $password_hash = password_hash($row['password'],PASSWORD_DEFAULT);
-    if(password_verify($password,$password_hash)){
+    if(password_verify($password,$row['password'])){
         $_SESSION['id']=$row['id'];
-        header('location:index.php');
+        header('location: index.php');
         exit();
     }
     else{
-        $_SESSION['error'] = 'Sai mật khẩu ';
+        $_SESSION['error'] = 'Sai mật khẩu!!!';
         header('location:login.php');
         exit();
     }
 }
 else{
-    $_SESSION['error'] = 'Vui lòng kiểm tra lại tài khoản ';
+    $_SESSION['error'] = 'Chưa có tài khoản này!!!';
 }
 
 // $sql = "SELECT * from admin where  username = ?";

@@ -19,19 +19,19 @@ else{
     $result2 = mysqli_query($conn,$sql2);
     if(mysqli_num_rows($result1) > 0){
         $_SESSION['error'] = "Username hoặc Email đã tồn tại";
-        header("location: signupStudent.php?error=$error");
+        header("location: signupStudent.php");
     }
     
     else if(mysqli_num_rows($result2) <0){
             $_SESSION['error'] = "ID Class không tồn tại";
-            header("location: signupStudent.php?error=$error");
+            header("location: signupStudent.php");
         }
         else{
         $token = md5($_POST['email']).rand(10,9999);
         $pass_hash=password_hash($pass,PASSWORD_DEFAULT);
         $sql3 = "INSERT INTO usersstudent (idclass,name, email, email_verification_link ,password) VALUES('$idclass','$user', '$email', '$token', '$pass_hash')";
         $result3 = mysqli_query($conn,$sql3);
-        $link = "<a href='http://localhost/Group6_BTL_61TH3/Login-Signup/verifyMailStudent.php?key=".$email."&token=".$token."'>Click and Verify Email</a>";
+        $link = "<a href='http://localhost/Group6_BTL_61TH3/Login-Signup/verifyMailStudent.php?key=".$email."&token=".$token."'>Verify Email</a>";
         if($result3 == true){
             require "./send-mail.php";
             if(sendEmailForAccountActive($email,$link)){
@@ -43,7 +43,7 @@ else{
         }
         else{
             $_SESSION['error'] = "ID Class không tồn tại";
-            header("location: signupStudent.php?error=$error"); //Chuyển hướng, hiển thị thông báo lỗi
+            header("location: signupStudent.php"); //Chuyển hướng, hiển thị thông báo lỗi
     }
             
     
