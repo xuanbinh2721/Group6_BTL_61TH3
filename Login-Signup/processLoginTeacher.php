@@ -29,6 +29,8 @@ if($stmt){
                         $_SESSION['id'] = $tchId;
                         $_SESSION['name'] = $tchName;
                         $_SESSION['email'] = $tchEmail;
+                        header('location: ../home/view_teacher.php');
+                        exit();
                     } else{
                         $_SESSION['error'] = 'Sai mật khẩu ';
                         header('location:loginTeacher.php');

@@ -7,14 +7,12 @@
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Bước 01: Kết nối Database Server
     require '../config/dbconfig.php';
-    // Bước 02: Thực hiện truy vấn
     $sql= "SELECT * FROM admin where username='$username'";
     $result = mysqli_query($conn,$sql);
     if(mysqli_num_rows($result) > 0){
         $_SESSION['error'] = 'Đã có Username này!!!';
-        header("location: addAdmin.php");//Chuyển hướng lại Trang Quản trị
+        header("location: addAdmin.php");
         exit();
     }
     else{
@@ -26,10 +24,11 @@
             $_SESSION['error'] = 'Có lỗi!!!';
             header("location: addAdmin.php");
         }else{
-            header("location: index.php");//Chuyển hướng lại Trang Quản trị
+            $_SESSION['success'] = 'Thêm tài khoản thành công!';
+            header("location: index.php");
+            exit();
         }
     }
 
-    // Bước 03: Đóng kết nối
     mysqli_close($conn);
 ?>

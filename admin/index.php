@@ -5,7 +5,11 @@ include('../admin/template/header.php');
 ?>
 
 <h3 class ="text-center mt-5">Quản lý tài khoản</h3>
-
+<p class="ms-3">
+  <?php
+    require '../config/session.php';
+  ?>
+</p>
 <nav>
   <div class="nav nav-tabs mt-5 " id="nav-tab" role="tablist">
     <button class="nav-link active" id="nav-adminaccount-tab" data-bs-toggle="tab" data-bs-target="#nav-adminaccount" type="button" role="tab" aria-controls="nav-adminaccount" aria-selected="true">Admin Account</button>

@@ -17,6 +17,7 @@ if(isset($_POST['Change']))
             $sql1 = "UPDATE admin SET password = '$newPass' where id ='$id'";
             $result1 = mysqli_query($conn,$sql1);
             if($result1 == true){
+                $_SESSION['success'] = 'Đổi mật khẩu thành công!';
                 header("location: index.php");
                 exit();
             }
