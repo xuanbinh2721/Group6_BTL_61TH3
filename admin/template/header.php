@@ -25,6 +25,9 @@
       </ul>
       <ul class="navbar-nav ms-auto">
         <li class = "">
+          <a class="nav-link" href = "#">Hi <?php echo $_SESSION['user']; ?></a>
+        </li>
+        <li class = "">
           <a class="nav-link" href = "logout.php">Log out</a>
         </li>
       </ul>

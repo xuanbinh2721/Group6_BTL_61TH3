@@ -15,6 +15,7 @@ if(mysqli_num_rows($result) == 1){
     $row = mysqli_fetch_array($result);
     if(password_verify($password,$row['password'])){
         $_SESSION['id']=$row['id'];
+        $_SESSION['user'] = $row['username'];
         header('location: index.php');
         exit();
     }
