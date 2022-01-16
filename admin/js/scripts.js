@@ -31,7 +31,43 @@ function check_pass() {
     }
 } 
 
+$(document).ready(function(){
+    $("#name").change(function(){
+        let namePattern = /[a-zA-Z_0-9]$/;
+        if(namePattern.test($(this).val())==false){
+            $("#notify").text("Full name không hợp lệ").css("color","red");
+            $("#username").prop("disabled", true );
+            $("#pass").prop( "disabled", true );
+            $("#btnAdd").prop( "disabled", true );
+            $(this).focus();
+        }
+        else{
+            $("#notify").text("");
+            $("#username").prop("disabled", false );
+            $("#pass").prop("disabled", false );
+            $("#btnAdd").prop( "disabled", false);
+        }
+    })
+})
 
+$(document).ready(function(){
+    $("#username").change(function(){
+        let usernamePattern = /[a-zA-Z_0-9]$/;
+        if(usernamePattern.test($(this).val())==false){
+            $("#notify").text("Username không hợp lệ").css("color","red");
+            $("#name").prop( "disabled", true );
+            $("#pass").prop( "disabled", true );
+            $("#btnAdd").prop( "disabled", true );
+            $(this).focus();
+        }
+        else{
+            $("#notify").text("");
+            $("#name").prop( "disabled", false ); 
+            $("#pass").prop( "disabled", false );
+            $("#btnAdd").prop( "disabled", false);
+        }
+    })
+})
 
 
 

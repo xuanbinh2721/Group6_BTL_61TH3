@@ -1,7 +1,6 @@
 
 <?php 
 include('../admin/template/header.php'); 
-require './template/logincheck.php';
 ?>
 
 <div class="main-content">
@@ -15,26 +14,26 @@ require './template/logincheck.php';
                 <tr>
                     <td>Full Name: </td>
                     <td>
-                        <input type="text" name="full_name" placeholder="">
+                        <input type="text" name="full_name" placeholder="" id="name">
                     </td>
                 </tr>
                 <tr>
                     <td>Username: </td>
                     <td>
-                        <input type="text" name="username" placeholder="">
+                        <input type="text" name="username" placeholder="" id="username">
                     </td>
                 </tr>
                 <tr>
                     <td>Password: </td>
                     <td>
-                        <input type="password" name="password" placeholder="">
+                        <input type="password" name="password" placeholder="" id="pass">
                     </td>
                 </tr>
             </table>
             <div class= "d-flex justify-content-center">
-                <button type="submit" class="btn bg-warning" name="add">Add Admin</button>
+                <button type="submit" class="btn bg-warning" name="add" id="btnAdd" disabled>Add Admin</button>
             </div>
-            <small>
+            <small id="notify">
             <?php
                 require '../config/session.php';
             ?>

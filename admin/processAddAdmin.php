@@ -6,7 +6,8 @@
     $full_name = $_POST['full_name'];
     $username = $_POST['username'];
     $password = $_POST['password'];
-
+    $full_name=htmlspecialchars($full_name);
+    $username = htmlspecialchars($username);
     require '../config/dbconfig.php';
     $sql= "SELECT * FROM admin where username='$username'";
     $result = mysqli_query($conn,$sql);
