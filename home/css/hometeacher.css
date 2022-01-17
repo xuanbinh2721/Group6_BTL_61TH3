@@ -1,0 +1,148 @@
+.main{
+    padding: 68px;
+    background-color: #f4f4f7;
+    
+}
+.view-profile{
+    margin-top: 16px;
+}
+.account{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    align-items: center;
+    
+}
+.avatar{
+    width:100px;
+    height: 100px;
+    padding: 16px;
+    margin-right: 10px;
+}
+.my-classes{
+    margin-top: 16px;
+    /* display: flex; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    align-items: center;
+    padding-left: 30px;
+    /* height: 600px; */
+    padding-bottom: 10px;
+}
+
+.groups_text{
+    padding: 0 12px;
+    text-align: justify;
+    margin-bottom: 16px;
+}
+.groups_link{
+    color: rgb(99, 95, 95);
+    margin-left: 64px;
+}
+hr{
+    display: block;
+    margin-left: -30px;
+}
+.groups_text-2{
+    margin-left: 10px;
+}
+.share{
+    display: flex;
+    /* border: 1px solid #000; */
+    border-radius: 5px;
+    align-items: center;
+    margin-top: 16px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255) ;
+    height: 85px;
+}
+.column2 > hr{
+    margin-left: 0px !important;
+}
+
+.share-text{
+    margin-right: 100px;
+}
+.avatar-md-6{
+    width: 20%;
+    height: 100%;
+    padding: 20px 45px 20px 45px;
+}
+.post-btn{
+    margin-left: 20%;
+}
+.rcm{
+    display: flex;
+    align-items: center;
+}
+.post-img{
+    height: 50px;
+    padding: 0;
+    margin: 6px;
+
+}
+.card-img{
+    padding: 24px 20px;
+}
+.recomment{
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.post-btn-1{
+    margin-left: 40%;
+}
+.btn-load{
+    width: 100%;
+}
+.footer{
+    margin-top: 16px;
+}
+.footer span:hover{
+    text-decoration: underline;
+}
+@media (max-width: 740px) {
+    /* .avatar{
+        display: none;
+    } */
+    .groups_link{
+        margin-left: 0px;
+    }
+    .groups_text {
+        text-align: left;
+    }
+    .avatar-md-6{
+        display: none;
+    }
+    .join{
+        margin-bottom: 20px;
+    }
+    .post-btn-1{
+        margin-left: 16%;
+    }
+}
+@media (min-width: 741px) and (max-width: 1023px) {
+    .column1 img{
+        display: none;
+    }
+    
+    .groups_link{
+        margin-left: 0px;
+    }
+    .groups_text{
+        text-align: left;
+    }
+    .join{
+        margin-bottom: 20px;
+    }
+    .share-text{
+        margin-right: 102px;
+    }
+    .post-btn{
+        margin-left: 30%;
+    }
+    .post-btn-1{
+        margin-left: 25%;
+    }
+
+    
+}

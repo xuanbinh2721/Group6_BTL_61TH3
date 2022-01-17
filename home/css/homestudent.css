@@ -1,0 +1,140 @@
+.main{
+    padding: 68px;
+    background-color: #f4f4f7;
+    
+}
+.view-profile{
+    margin-top: 16px;
+}
+.account{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    align-items: center;
+    
+}
+.avatar{
+    width:100px;
+    height: 100px;
+    padding: 16px;
+    margin-right: 10px;
+}
+.my-classes{
+    margin-top: 16px;
+    /* display: flex; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    align-items: center;
+    padding-left: 30px;
+    /* height: 600px; */
+    padding-bottom: 10px;
+}
+
+.groups_text{
+    padding: 0 30px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.groups_link{
+    color: rgb(99, 95, 95);
+    margin-left: 64px;
+}
+hr{
+    display: block;
+    margin-left: -30px;
+}
+
+.type-post{
+    /* display: flex; */
+    /* border: 1px solid #000; */
+    border-radius: 5px;
+    align-items: center;
+    margin-top: 16px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255) ;
+    /* height: 85px; */
+    padding: 20px 50px;
+}
+.column2 > hr{
+    margin-left: 0px !important;
+}
+.post-btn{
+    margin-left: 40%;
+}
+.btn-load{
+    width: 100%;
+}
+.Upcomming{
+    background-color: #fff;
+    margin-top: 16px;
+    border-radius: 5px;
+    padding: 20px;
+}
+.Upcomming hr{
+    margin-left: -18px;
+    margin-right: -18px;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+}
+.form-submit{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left{
+    margin-right: 200px;
+}
+.right{
+    margin-left: 160px;
+}
+.footer{
+    margin-top: 16px;
+}
+.footer span:hover{
+    text-decoration: underline;
+}
+@media (max-width: 740px) {
+    .form-submit{
+        flex-direction: column;
+    }
+    .post-btn{
+        margin-left: 25% !important;
+    }
+    .right{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    .left{
+        display: none;
+        margin-left: 0px;
+    }
+}
+@media (min-width: 741px) and (max-width: 1023px) {
+    .column1 img{
+        display: none;
+    }
+    .account-1{
+        margin-left: 44px;
+    }
+    .groups_link{
+        margin-left: 0px;
+    }
+    .right{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    .left{
+        display: none;
+        margin-left: 0px;
+    }
+    .row1 a{
+        display: none;
+    }
+    .row1 h5{
+        margin-left: -12px;
+    }
+
+    
+}
