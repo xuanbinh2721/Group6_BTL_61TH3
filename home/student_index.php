@@ -12,6 +12,11 @@
      if(mysqli_num_rows($result) >0){
          $row = mysqli_fetch_assoc($result);
      }
+     $sql2 = "SELECT * from usersstudent where id = '$iduser'";
+     $result2 = mysqli_query($conn,$sql2);
+     if(mysqli_num_rows($result2) >0){
+         $row2 = mysqli_fetch_assoc($result2);
+     }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -137,7 +142,7 @@
                 <div class="my-classes">
                     <h5 class="pt-3">MY CLASSES</h5>
                     <?php 
-                        $idclass = $row['idclass'];
+                        $idclass = $row2['idclass'];
                         $sql1 = "SELECT * from class where idclass = '$idclass'";
                         $result1 = mysqli_query($conn,$sql1);
                         if(mysqli_num_rows($result1) >0){
