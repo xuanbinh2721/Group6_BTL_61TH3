@@ -1,0 +1,70 @@
+.navbar{
+    height: 62px !important;
+    padding: 0 !important;
+    background-color: rgb(255, 255, 255) !important;
+    box-shadow: 2px 2px 4px rgb(236, 236, 236);
+}
+.edmodo-img{
+    margin-top: -8%;
+}
+.account_dad{
+    position: relative;
+
+}
+.account_chil{
+    border: 1px solid #ecedee;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(12.5%);
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+    padding-left: 0px;
+    /* border-radius: 5px; */
+    display: none;
+}
+.account_chil a{
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    color: #9a9a9a;
+    
+}
+.account_dad:hover .account_chil{
+    display: block;
+}
+.nav-link:hover{
+    /* background-color: aqua; */
+    background-color: #c7cbcf;
+
+}
+.nav-link{
+    display: block;
+    line-height: 62px;
+    padding: 0 9px !important;
+}
+@media (max-width: 1023px){
+    .btn-show{
+        margin-right: -12px;
+        height: 40px;
+    }
+    .sub-menu-header{
+        display: block;
+        position: absolute;
+        width: 100%;
+        line-height: 60px;
+        background-color: #fff;
+        border-top: 1px solid rgb(233, 218, 218);
+        border-left: 1px solid #f0f0f0;
+        top: 50%;
+        transform: translateY(31.8px);
+    }
+    .account_dad{
+        display: block;
+        width: 100%;
+    }
+    .account_chil{
+        width: 100%;
+    }
+}
