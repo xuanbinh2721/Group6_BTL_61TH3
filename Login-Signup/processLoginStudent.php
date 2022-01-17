@@ -29,7 +29,8 @@ if($stmt){
                         $_SESSION['id'] = $stdId;
                         $_SESSION['name'] = $stdName;
                         $_SESSION['email'] = $stdEmail;
-                        header('location: ../Home/index.php');
+                        header('location: ../home/student_index.php');
+                        exit();
                     } else{
                         $_SESSION['error'] = 'Sai mật khẩu ';
                         header('location:loginStudent.php');

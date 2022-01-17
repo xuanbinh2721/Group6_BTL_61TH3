@@ -22,14 +22,14 @@ if($stmt){
     if(mysqli_stmt_execute($stmt)) {
         mysqli_stmt_store_result($stmt);
         if(mysqli_stmt_num_rows($stmt) == 1) {
-            mysqli_stmt_bind_result($stmt, $tchdId, $tchdName,  $tchdEmail, $tchPassword,  $status,$token, $tokenVerification);
+            mysqli_stmt_bind_result($stmt, $tchId, $tchName,  $tchEmail, $tchPassword,  $status,$token, $tokenVerification);
             if(mysqli_stmt_fetch($stmt)) {
                 if($status == 1) {
                     if(password_verify($password, $tchPassword)) {
                         $_SESSION['id'] = $tchId;
                         $_SESSION['name'] = $tchName;
                         $_SESSION['email'] = $tchEmail;
-                        header('location: ../home/view_teacher.php');
+                        header('location: ../home/teacher_index.php');
                         exit();
                     } else{
                         $_SESSION['error'] = 'Sai mật khẩu ';
