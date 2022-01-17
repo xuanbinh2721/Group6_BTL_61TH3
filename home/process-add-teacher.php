@@ -17,7 +17,7 @@
     $sql = "INSERT INTO teacher (iduser,full_name, sex, date_of_birth) VALUES ('$id','$hoten','$gioitinh','$ngaysinh')";
     // echo $sql;
     $ketqua = mysqli_query($conn,$sql);
-    
+     
     if(!$ketqua){
          $_SESSION['error'] = 'Có lỗi!';
         header("location: ./add-teacher.php");

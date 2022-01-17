@@ -25,7 +25,7 @@
             </div>
             <div class="form-group">
                 <label for="txtNgaySinh">Ngày Sinh</label>
-                <input type="date" class="form-control" id=dateNgaySinh" name="dateNgaySinh" placeholder="">
+                <input type="date" class="form-control" id="dateNgaySinh" name="dateNgaySinh" placeholder="">
             </div>
             
             <button type="submit" class="btn btn-warning mt-3">Lưu lại</button>
