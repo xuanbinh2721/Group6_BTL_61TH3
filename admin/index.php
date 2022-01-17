@@ -73,10 +73,10 @@ include('../admin/template/header.php');
   </thead>
   <tbody>
   <?php    
-  // $conn = mysqli_connect('localhost','root','','edmodo');
-  // if(!$conn){
-  //     die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
-  // }             
+  $conn = mysqli_connect('localhost','root','','edmodo');
+  if(!$conn){
+      die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
+  }             
   $sql1 = "SELECT  name, email, email_verified_at, status FROM usersteacher";
   $result1 = mysqli_query($conn,$sql1);
   if(mysqli_num_rows($result1) > 0){
@@ -110,10 +110,10 @@ include('../admin/template/header.php');
   </thead>
   <tbody>
   <?php
-  // $conn = mysqli_connect('localhost','root','','edmodo');
-  // if(!$conn){
-  //     die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
-  // }
+  $conn = mysqli_connect('localhost','root','','edmodo');
+  if(!$conn){
+      die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
+  }
   $sql2 = "SELECT idclass, name, email,email_verified_at, status FROM usersstudent";
   $result2 = mysqli_query($conn,$sql2);
   if(mysqli_num_rows($result2) > 0){
