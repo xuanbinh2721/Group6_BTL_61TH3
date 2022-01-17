@@ -1,7 +1,6 @@
 <?php 
     include('../admin/template/header.php');
 
-    
     $id = $_GET['id'];
 
     // Bước 01: Kết nối Database Server
