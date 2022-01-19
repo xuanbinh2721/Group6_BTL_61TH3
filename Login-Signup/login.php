@@ -36,7 +36,7 @@
                         <i class="fas fa-school"></i>
                     </div>
                     <div class="choose-teacher-text">
-                        <h5 class="mt-1 mb-2">Log In For An Teacher Account</h5>
+                        <h5 class="mt-1 mb-2">Log In For Teacher Account</h5>
                         <p>For teachers, co-teachers, admins, coaches, club advisors, instructional tech.</p>
                     </div>
                 </div>    
@@ -47,7 +47,7 @@
                         <i class="fas fa-user-graduate"></i>
                     </div>
                     <div class="choose-teacher-text">
-                        <h5 class="mt-1 mb-2">Log In For An Student Account</h5>
+                        <h5 class="mt-1 mb-2">Log In For Student Account</h5>
                         <p>For students, class participants, club members, etc ...</p>
                     </div>
                 </div>    
